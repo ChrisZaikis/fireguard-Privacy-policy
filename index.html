@@ -1,118 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>FireGuard EULA</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-  }
-  footer {
-    margin-top: 40px;
-    padding: 20px 10px;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #555;
-    border-top: 1px solid #ddd;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <title>End User License Agreement – FireGuard 112+</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg-main: #020617;     
+      --card-bg: #020617;
+      --card-border: #1e293b;
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --accent: #fbbf24;       
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+      min-height: 100vh;
+    }
+
+    .hero {
+      background: linear-gradient(90deg, #f97316, #22c55e, #0ea5e9);
+      padding: 48px 16px 56px;
+      text-align: center;
+    }
+
+    .hero-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .app-logo {
+      width: 96px;
+      height: 96px;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+      margin-bottom: 16px;
+    }
+
+    .hero-title {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: #f9fafb;
+      margin-bottom: 8px;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: #e5e7eb;
+      opacity: 0.9;
+      margin-bottom: 4px;
+    }
+
+    .hero-date {
+      font-size: 0.9rem;
+      color: #e5e7eb;
+      opacity: 0.85;
+    }
+
+    .page-wrapper {
+      padding: 32px 16px 48px;
+    }
+
+    .card {
+      max-width: 900px;
+      margin: 0 auto;
+      background: radial-gradient(circle at top left, #020617, #020617 45%, #020617);
+      border-radius: 22px;
+      padding: 32px 24px 40px;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+    }
+
+    @media (min-width: 768px) {
+      .card {
+        padding: 40px 40px 48px;
+      }
+    }
+
+    .intro-line {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 32px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title span.number {
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 0.97rem;
+      color: var(--text-main);
+    }
+
+    ul {
+      margin: 8px 0 16px 20px;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    footer {
+      max-width: 900px;
+      margin: 24px auto 0;
+      padding: 20px 8px 0;
+      border-top: 1px solid #1f2937;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-<h1>FireGuard – End User License Agreement (EULA)</h1>
-<p><strong>Version 1.0 – Last Updated: [Insert Date]</strong></p>
-<p><strong>Owner: Chris Zaikis</strong></p>
+  <!-- HERO / HEADER -->
+  <header class="hero">
+    <div class="hero-inner">
+      <img src="fire-zaikis.png" alt="FireGuard Icon" class="app-logo" />
+      <div class="hero-title">End User License Agreement – FireGuard</div>
+      <div class="hero-subtitle">Legal terms for using the FireGuard mobile application</div>
+      <div class="hero-date">5 October 2025</div>
+    </div>
+  </header>
 
-<h2>1. Acceptance of Agreement</h2>
-<p>
-By downloading, installing, accessing, or using the FireGuard mobile application (“App”), you (“User”) agree to be bound by this End User License Agreement (“Agreement”). If you do not agree to this Agreement, you must not use the App and must uninstall it immediately. FireGuard reserves all rights not expressly granted in this Agreement.
-</p>
+  <!-- MAIN CARD -->
+  <main class="page-wrapper">
+    <section class="card">
+      <p class="intro-line">
+        This End User License Agreement (“Agreement”) is a legal agreement between you (“User”) and
+        <strong>Chris Zaikis</strong> regarding the use of the FireGuard mobile application (“App”).
+      </p>
 
-<h2>2. License Grant</h2>
-<p>
-FireGuard grants you a limited, revocable, non-exclusive, non-transferable, and non-sublicensable license to use the App solely for your personal, non-commercial use on any device you own or control.
-</p>
+      <h2 class="section-title"><span class="number">1.</span> Acceptance of Agreement</h2>
+      <p>
+        By downloading, installing, accessing, or using the FireGuard 112+ mobile application (“App”), you (“User”) agree to be
+        bound by this End User License Agreement (“Agreement”). If you do not agree to this Agreement, you must not use
+        the App and must uninstall it immediately. FireGuard reserves all rights not expressly granted in this Agreement.
+      </p>
 
-<h2>3. License Restrictions</h2>
-<ul>
-  <li>Do not copy, reproduce, or distribute the App.</li>
-  <li>Do not reverse engineer, decompile, or extract source code.</li>
-  <li>Do not modify or create derivative works.</li>
-  <li>Do not circumvent security or encryption.</li>
-  <li>Do not use the App for unlawful or unauthorized purposes.</li>
-  <li>Do not use FireGuard content, logos, or trademarks without permission.</li>
-</ul>
+      <h2 class="section-title"><span class="number">2.</span> License Grant</h2>
+      <p>
+        FireGuard grants you a limited, revocable, non-exclusive, non-transferable, and non-sublicensable license to
+        download, install, and use the App solely for your personal, non-commercial use on any device you own or control.
+        You may not use the App for commercial, governmental, or emergency-response deployment without explicit written
+        permission from the owner.
+      </p>
 
-<h2>4. Ownership and Intellectual Property</h2>
-<p>
-All rights, title, and interest in the App—including code, design, algorithms, graphics, text, and trademarks—are owned exclusively by <strong>Chris Zaikis</strong>. FireGuard™ and 112+ Emergency Profile™ are registered trademarks.
-</p>
+      <h2 class="section-title"><span class="number">3.</span> License Restrictions</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Copy, reproduce, distribute, or create derivative works of the App or its content.</li>
+        <li>Reverse engineer, decompile, disassemble, or attempt to extract the source code.</li>
+        <li>Modify, translate, or adapt the App or create derivative works based on it.</li>
+        <li>Circumvent security measures, encryption, or access controls.</li>
+        <li>Use the App for any unlawful, harmful, misleading, or unauthorized purpose.</li>
+        <li>Use any graphical elements, logos, trademarks, or design assets without written permission.</li>
+        <li>Use the App to build or improve a competing product or service.</li>
+      </ul>
 
-<h2>5. Privacy and Data Processing</h2>
-<p>
-Use of the App is governed by the FireGuard Privacy Policy, which is incorporated into this Agreement.
-</p>
+      <h2 class="section-title"><span class="number">4.</span> Ownership and Intellectual Property</h2>
+      <p>
+        All rights, title, and interest in the App—including but not limited to code, design, text, algorithms, APIs,
+        data structures, graphics, images, logos, trademarks, and documentation—are and remain the exclusive property of
+        <strong>Chris Zaikis</strong>. The App is protected under EU Copyright Law, the Berne Convention, international
+        intellectual property treaties, and applicable national laws. “FireGuard™” and “112+ Emergency Profile™” are
+        trademarks owned by Chris Zaikis. All rights reserved.
+      </p>
 
-<h2>6. Third-Party Services</h2>
-<p>
-The App interacts with NASA FIRMS, OpenWeather, Google Play Services, and system APIs. These services operate under their own terms and privacy policies.
-</p>
+      <h2 class="section-title"><span class="number">5.</span> Privacy and Data Processing</h2>
+      <p>
+        Use of the App is also governed by the FireGuard Privacy Policy, which explains what data is collected, how it is
+        used, how it is stored, and your rights as a user. The Privacy Policy forms an integral part of this Agreement.
+      </p>
 
-<h2>7. Safety and Disclaimer</h2>
-<p>
-FireGuard provides advisory information only and does not replace emergency services or official authorities. All risk-related decisions are the User’s responsibility.
-</p>
+      <h2 class="section-title"><span class="number">6.</span> Third-Party Services</h2>
+      <p>
+        The App may interact with trusted third-party services such as NASA FIRMS (Fire Information for Resource
+        Management System), OpenWeather API, Google Play Services, and device operating system frameworks. Each third
+        party may have its own privacy policy and terms. FireGuard is not responsible for the content, operation, or data
+        practices of third-party services.
+      </p>
 
-<h2>8. Limitation of Liability</h2>
-<p>
-To the fullest extent allowed by law, FireGuard is not liable for personal injury, property damage, data loss, incorrect alerts, or indirect/consequential damages.
-</p>
+      <h2 class="section-title"><span class="number">7.</span> Safety and Disclaimer</h2>
+      <p>
+        FireGuard provides informational and advisory content only. It does not replace emergency services, professional
+        fire authorities, local weather bureaus, or civil protection guidance. The User remains fully responsible for
+        safety decisions.
+      </p>
+      <p>
+        The App is provided “as is” and “as available” without warranty of any kind, including but not limited to accuracy,
+        availability, reliability, security, or fitness for a particular purpose. Data sources may vary, be delayed, or
+        become unavailable.
+      </p>
 
-<h2>9. Termination</h2>
-<p>
-FireGuard may terminate this Agreement at any time if the User violates its terms. Upon termination, the User must uninstall the App.
-</p>
+      <h2 class="section-title"><span class="number">8.</span> Limitation of Liability</h2>
+      <p>
+        To the maximum extent permitted by law, FireGuard, its owner, and its contributors shall not be liable for any
+        personal injury, property damage, loss of data, inaccurate alerts, service interruptions, or any indirect,
+        incidental, special, or consequential damages arising from or related to your use of the App. Your use of the App
+        is entirely at your own risk.
+      </p>
 
-<h2>10. Updates and Modifications</h2>
-<p>
-We may update the App or this Agreement at any time. Continued use constitutes acceptance of modifications.
-</p>
+      <h2 class="section-title"><span class="number">9.</span> Termination</h2>
+      <p>
+        FireGuard may, at its sole discretion, suspend or terminate your license to use the App if you violate this
+        Agreement, misuse the App, pose a security or legal risk, or where required by law or regulatory authorities.
+        Upon termination, you must immediately uninstall the App and cease all use.
+      </p>
 
-<h2>11. App Store Terms</h2>
-<p>
-If downloaded via Google Play or Apple App Store, you acknowledge that this Agreement is between you and the developer only. Google and Apple are not responsible for support, maintenance, or legal compliance.
-</p>
+      <h2 class="section-title"><span class="number">10.</span> Updates and Modifications</h2>
+      <p>
+        We may update the App or this Agreement from time to time. Continued use of the App after any changes to this
+        Agreement constitutes your acceptance of the updated terms.
+      </p>
 
-<h2>12. Jurisdiction</h2>
-<p>
-This Agreement is governed by the laws of the European Union and the national laws of the User’s EU Member State. Jurisdiction lies with the competent courts of the User’s country of residence within the EU.
-</p>
+      <h2 class="section-title"><span class="number">11.</span> App Store Terms</h2>
+      <p>
+        If the App is downloaded via Google Play or Apple App Store, you acknowledge that this Agreement is between you
+        and the developer only, and not with Google or Apple. Google and Apple have no responsibility for the App or its
+        content, including but not limited to maintenance, support, legal compliance, warranties, or intellectual
+        property claims.
+      </p>
 
-<h2>13. Severability</h2>
-<p>
-If any part of this Agreement is invalid, the remaining provisions remain in force.
-</p>
+      <h2 class="section-title"><span class="number">12.</span> Jurisdiction</h2>
+      <p>
+        This Agreement and any disputes arising from or related to the use of the App shall be governed by the laws
+        applicable in the User’s country of residence within the European Union, together with relevant European Union
+        regulations. Jurisdiction for any dispute shall lie with the competent courts of the EU Member State in which the
+        User resides, unless otherwise required by mandatory consumer protection laws or applicable international
+        regulations. Nothing in this Agreement limits any consumer rights granted under the laws of the European Union or
+        the national legislation of EU Member States.
+      </p>
 
-<h2>14. Contact Information</h2>
-<p>
-For support or legal inquiries: <br>
-<strong>fireguard.app.service@gmail.com</strong><br>
-Owner: <strong>Chris Zaikis</strong>
-</p>
+      <h2 class="section-title"><span class="number">13.</span> Severability</h2>
+      <p>
+        If any provision of this Agreement is held to be invalid or unenforceable, the remaining provisions shall continue
+        in full force and effect.
+      </p>
 
-<footer>
-  &copy; <span id="year"></span> FireGuard. All Rights Reserved.<br>
-  FireGuard™ and 112+ Emergency Profile™ are trademarks of Chris Zaikis.<br>
-  Version 1.0 – EULA Document<br>
-  Contact: fireguard.app.service@gmail.com
-</footer>
+      <h2 class="section-title"><span class="number">14.</span> Contact Information</h2>
+      <p>
+        For legal inquiries, permissions, or support, please contact:<br />
+        <strong>fireguard.app.service@gmail.com</strong><br />
+        Owner: <strong>Chris Zaikis</strong>
+      </p>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+      <footer>
+        &copy; <span id="year"></span> FireGuard. All rights reserved.<br />
+        FireGuard™ and 112+ Emergency Profile™ are trademarks of Chris Zaikis.
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
