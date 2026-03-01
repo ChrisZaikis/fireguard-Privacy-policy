@@ -2,184 +2,696 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>End User License Agreement – FireGuard 112+</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FireGuard 112+ Legal</title>
+  <meta name="description" content="FireGuard 112+ legal documents: Privacy Policy and End User License Agreement (EULA)." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FireGuard 112+ Legal" />
+  <meta property="og:description" content="Privacy Policy and EULA for FireGuard 112+ (iOS and Android)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/fire-zaikis.png" />
+
   <style>
-    :root {
-      --bg-main: #020617;
-      --card-border: #1e293b;
-      --text-main: #e5e7eb;
-      --text-muted: #9ca3af;
-      --accent: #fbbf24;
-      --link: #93c5fd;
+    :root{
+      --bg:#020617;
+      --panel:rgba(255,255,255,0.03);
+      --panel2:rgba(255,255,255,0.02);
+      --border:#1e293b;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --link:#93c5fd;
+      --accent:#fbbf24;
+      --accent2:#22c55e;
+      --shadow: 0 28px 70px rgba(0,0,0,0.55);
+      --radius: 18px;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg-main);
-      color: var(--text-main);
+
+    *{ box-sizing:border-box; margin:0; padding:0; }
+    html{ scroll-behavior:smooth; }
+    body{
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
       min-height: 100vh;
-      line-height: 1.5;
+      line-height: 1.55;
     }
-    .hero {
-      background: linear-gradient(90deg, #f97316, #22c55e, #0ea5e9);
-      padding: 48px 16px 56px;
-      text-align: center;
+
+    a{ color: var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    .container{
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
     }
-    .hero-inner { max-width: 980px; margin: 0 auto; }
-    .app-logo {
-      width: 96px; height: 96px; border-radius: 24px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
-      margin-bottom: 16px; object-fit: cover;
+
+    .topbar{
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(10px);
+      background: rgba(2,6,23,0.78);
+      border-bottom: 1px solid rgba(30,41,59,0.7);
     }
-    .hero-title { font-size: 2.1rem; font-weight: 900; color: #f9fafb; margin-bottom: 8px; }
-    .hero-subtitle { font-size: 1rem; color: #e5e7eb; opacity: 0.92; margin-bottom: 6px; }
-    .hero-date { font-size: 0.95rem; color: #e5e7eb; opacity: 0.88; }
-    .page-wrapper { padding: 32px 16px 56px; }
-    .card {
-      max-width: 980px; margin: 0 auto;
-      border-radius: 22px;
-      padding: 32px 24px 40px;
-      border: 1px solid var(--card-border);
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 12px;
+      padding: 12px 0;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight: 900;
+      letter-spacing: 0.2px;
+      min-width: 200px;
+    }
+
+    .logo{
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 1px solid rgba(255,255,255,0.14);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+    }
+
+    .navlinks{
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .navlinks a{
+      padding: 8px 12px;
+      border: 1px solid rgba(51,65,85,0.75);
+      border-radius: 999px;
       background: rgba(255,255,255,0.02);
+      color: var(--text);
+      font-size: 0.92rem;
     }
-    @media (min-width: 768px) { .card { padding: 42px 44px 52px; } }
-    p { margin: 10px 0; font-size: 0.98rem; color: var(--text-main); }
-    .muted { color: var(--text-muted); }
-    .section-title {
-      font-size: 1.12rem; font-weight: 900;
-      margin: 30px 0 12px;
-      display: flex; align-items: center; gap: 10px;
+
+    .hero{
+      padding: 40px 0 18px;
     }
-    .section-title span.number { color: var(--accent); font-weight: 900; }
-    ul { margin: 10px 0 16px 20px; }
-    li { margin-bottom: 7px; color: var(--text-main); }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer {
-      max-width: 980px;
-      margin: 22px auto 0;
-      padding: 18px 8px 0;
-      border-top: 1px solid #1f2937;
-      font-size: 0.88rem;
-      color: var(--text-muted);
+
+    .hero-card{
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background:
+        radial-gradient(800px 360px at 20% 0%, rgba(249,115,22,0.16), transparent 50%),
+        radial-gradient(700px 320px at 80% 10%, rgba(34,197,94,0.14), transparent 52%),
+        radial-gradient(900px 420px at 50% 0%, rgba(14,165,233,0.12), transparent 55%),
+        rgba(255,255,255,0.02);
+      box-shadow: var(--shadow);
+      padding: 26px 22px;
+    }
+
+    @media (min-width: 800px){
+      .hero-card{ padding: 34px 34px; }
+    }
+
+    .h-title{
+      font-size: 2.05rem;
+      font-weight: 950;
+      margin-bottom: 8px;
+      color: #f9fafb;
+    }
+    .h-sub{
+      color: rgba(229,231,235,0.92);
+      margin-bottom: 10px;
+    }
+    .h-meta{
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .kicker{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      border: 1px solid rgba(51,65,85,0.85);
+      border-radius: 999px;
+      padding: 5px 10px;
+      background: rgba(255,255,255,0.02);
+      color: var(--text);
+      font-size: 0.86rem;
+    }
+    .dot{
+      width: 8px; height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+    .dot.green{ background: var(--accent2); }
+    .dot.blue{ background: #0ea5e9; }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 14px;
+    }
+    @media (min-width: 900px){
+      .grid{ grid-template-columns: 1.05fr 0.95fr; }
+    }
+
+    .card{
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--panel2);
+      box-shadow: var(--shadow);
+      padding: 22px 18px;
+    }
+    @media (min-width: 800px){
+      .card{ padding: 26px 22px; }
+    }
+
+    .h2{
+      font-size: 1.15rem;
+      font-weight: 900;
+      margin: 18px 0 8px;
+    }
+    .h3{
+      font-size: 1.02rem;
+      font-weight: 900;
+      margin: 14px 0 6px;
+    }
+    .p{
+      color: var(--text);
+      margin: 8px 0;
+      font-size: 0.98rem;
+    }
+    .muted{ color: var(--muted); }
+
+    .toc{
+      border: 1px solid rgba(51,65,85,0.8);
+      background: rgba(255,255,255,0.02);
+      border-radius: 16px;
+      padding: 14px 14px;
+    }
+    .toc a{ display:block; padding: 6px 0; color: var(--text); }
+    .toc a span{ color: var(--muted); }
+
+    ul{ margin: 8px 0 14px 18px; }
+    li{ margin: 6px 0; color: var(--text); }
+
+    .table-wrap{ overflow-x:auto; margin-top: 10px; }
+    table{
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 820px;
+      border: 1px solid rgba(31,41,55,0.9);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    th, td{
+      padding: 12px 12px;
+      border-bottom: 1px solid rgba(31,41,55,0.9);
+      vertical-align: top;
+      font-size: 0.93rem;
+    }
+    th{
+      text-align:left;
+      color:#f9fafb;
+      background: rgba(255,255,255,0.03);
+    }
+    tr:last-child td{ border-bottom:none; }
+
+    .callout{
+      border: 1px solid rgba(51,65,85,0.85);
+      background: rgba(255,255,255,0.03);
+      border-radius: 16px;
+      padding: 14px 14px;
+      margin-top: 12px;
+    }
+
+    .footer{
+      margin: 18px 0 34px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(31,41,55,0.9);
+      color: var(--muted);
+      font-size: 0.92rem;
       text-align: center;
     }
+
+    code{
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(31,41,55,0.95);
+      padding: 2px 6px;
+      border-radius: 8px;
+    }
+
+    .anchor{
+      scroll-margin-top: 84px;
+    }
+
+    .two-col{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    @media (min-width: 900px){
+      .two-col{ grid-template-columns: 1fr 1fr; }
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(51,65,85,0.85);
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+      font-weight: 800;
+      gap: 10px;
+      text-decoration: none;
+      width: 100%;
+    }
+    .btn:hover{ text-decoration:none; border-color: rgba(251,191,36,0.7); }
+    .btn small{ color: var(--muted); font-weight: 700; }
   </style>
 </head>
 
 <body>
-  <header class="hero">
-    <div class="hero-inner">
-      <img src="fire-zaikis.png" alt="FireGuard Icon" class="app-logo" />
-      <div class="hero-title">End User License Agreement – FireGuard 112+</div>
-      <div class="hero-subtitle">Legal terms for using the FireGuard 112+ mobile application</div>
-      <div class="hero-date">Effective date: <strong>1 March 2026</strong></div>
+  <div class="topbar">
+    <div class="container">
+      <div class="nav">
+        <div class="brand">
+          <img class="logo" src="fire-zaikis.png" alt="FireGuard 112+ Icon" />
+          <div>FireGuard 112+ Legal</div>
+        </div>
+        <div class="navlinks">
+          <a href="#top">Home</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#eula">EULA</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
     </div>
-  </header>
+  </div>
 
-  <main class="page-wrapper">
-    <section class="card">
-      <p class="muted">
-        This End User License Agreement (“Agreement”) is a legal agreement between you (“User”) and <strong>Chris Zaikis</strong>
-        regarding the use of the FireGuard 112+ mobile application (the “App”).
-      </p>
+  <div id="top" class="hero anchor">
+    <div class="container">
+      <div class="hero-card">
+        <div class="h-title">Legal Documents</div>
+        <div class="h-sub">Privacy Policy and End User License Agreement for FireGuard 112+ (iOS and Android).</div>
+        <div class="h-meta">
+          Effective date: <strong>1 March 2026</strong> · Recommended for store listings: link to this page, or to the sections below.
+        </div>
 
-      <h2 class="section-title"><span class="number">1.</span> Acceptance</h2>
-      <p>
-        By downloading, installing, accessing, or using the App, you agree to be bound by this Agreement. If you do not agree,
-        do not use the App and uninstall it.
-      </p>
+        <div class="kicker" aria-label="Highlights">
+          <div class="pill"><span class="dot blue"></span> iOS + Android</div>
+          <div class="pill"><span class="dot"></span> AdMob banners</div>
+          <div class="pill"><span class="dot green"></span> Remote push (FCM/APNs)</div>
+          <div class="pill"><span class="dot blue"></span> Location permissions</div>
+          <div class="pill"><span class="dot"></span> ATT (iOS 14+)</div>
+        </div>
 
-      <h2 class="section-title"><span class="number">2.</span> License Grant</h2>
-      <p>
-        We grant you a limited, revocable, non-exclusive, non-transferable, and non-sublicensable license to use the App for
-        personal, non-commercial purposes on devices you own or control.
-      </p>
+        <div class="two-col">
+          <a class="btn" href="#privacy">
+            Privacy Policy <small>location, ads, notifications</small>
+          </a>
+          <a class="btn" href="#eula">
+            EULA <small>license terms and disclaimers</small>
+          </a>
+        </div>
 
-      <h2 class="section-title"><span class="number">3.</span> Restrictions</h2>
-      <p>You agree not to:</p>
-      <ul>
-        <li>Copy, distribute, or create derivative works of the App or its content.</li>
-        <li>Reverse engineer, decompile, disassemble, or attempt to extract source code.</li>
-        <li>Circumvent security measures or access controls.</li>
-        <li>Use the App for unlawful, harmful, misleading, or unauthorized purposes.</li>
-        <li>Use the App to build or improve a competing product or service.</li>
-      </ul>
+        <div class="callout" style="margin-top:14px;">
+          <div class="p muted">
+            Tip for App Store Connect: set the Privacy Policy URL to your site root.
+            Reviewers can access the Privacy Policy section directly via the “Privacy” navigation or the <code>#privacy</code> section.
+          </div>
+        </div>
+      </div>
 
-      <h2 class="section-title"><span class="number">4.</span> Ownership</h2>
-      <p>
-        All rights, title, and interest in the App (including code, design, text, and trademarks) remain the exclusive property of
-        <strong>Chris Zaikis</strong>. All rights reserved.
-      </p>
+      <div class="grid">
+        <div class="card">
+          <div class="h2">Quick links</div>
+          <div class="toc">
+            <a href="#privacy"><strong>Privacy Policy</strong> <span>data collection, ads, location, notifications</span></a>
+            <a href="#eula"><strong>EULA</strong> <span>license grant, restrictions, disclaimers</span></a>
+            <a href="#contact"><strong>Contact</strong> <span>privacy requests and support</span></a>
+          </div>
+        </div>
 
-      <h2 class="section-title"><span class="number">5.</span> Privacy</h2>
-      <p>
-        Use of the App is also governed by the Privacy Policy. The Privacy Policy forms an integral part of this Agreement.
-        View it at: <a href="/privacy">/privacy</a>.
-      </p>
+        <div class="card">
+          <div class="h2">Owner and contact</div>
+          <p class="p"><strong>Controller (Developer):</strong> Chris Zaikis</p>
+          <p class="p"><strong>Email:</strong> <a href="mailto:fireguard.app.service@gmail.com">fireguard.app.service@gmail.com</a></p>
+          <p class="p muted">
+            If you have privacy questions or requests (access, deletion, objection), contact the email above.
+          </p>
+        </div>
+      </div>
 
-      <h2 class="section-title"><span class="number">6.</span> Advertising and Third-Party Services</h2>
-      <p>
-        The App may display advertisements and uses <strong>Google AdMob</strong> to serve banner ads on iOS and Android.
-        Third-party services may process certain data under their own policies.
-      </p>
-      <p class="muted">
-        Third-party services may include advertising services (AdMob), notification delivery services (FCM/APNs),
-        platform services, weather APIs, mapping providers, and public data sources.
-      </p>
+    </div>
+  </div>
 
-      <h2 class="section-title"><span class="number">7.</span> Safety Disclaimer</h2>
-      <p>
-        The App provides informational and advisory content only. It does not replace emergency services, fire authorities,
-        weather bureaus, or civil protection guidance. The User remains fully responsible for safety decisions.
-      </p>
+  <!-- PRIVACY POLICY -->
+  <div id="privacy" class="anchor" style="padding: 14px 0 34px;">
+    <div class="container">
+      <div class="card">
+        <div class="h-title" style="font-size:1.8rem;">Privacy Policy</div>
+        <div class="h-meta">Applies to FireGuard 112+ on iOS and Android.</div>
 
-      <h2 class="section-title"><span class="number">8.</span> No Warranty</h2>
-      <p>
-        The App is provided “as is” and “as available” without warranties of any kind, including accuracy, availability,
-        reliability, or fitness for a particular purpose. Data sources may be delayed or unavailable.
-      </p>
+        <div class="callout">
+          <div class="p">
+            This Privacy Policy explains how FireGuard 112+ (the “App”) collects, uses, and shares data when you use the App.
+          </div>
+        </div>
 
-      <h2 class="section-title"><span class="number">9.</span> Limitation of Liability</h2>
-      <p>
-        To the maximum extent permitted by law, the developer shall not be liable for any direct or indirect damages arising
-        from or related to the use of the App, including inaccurate alerts, interruptions, or reliance on information.
-      </p>
+        <div class="h2">1. Summary</div>
+        <ul>
+          <li><strong>Advertising:</strong> The App displays banner ads using <strong>Google AdMob</strong>.</li>
+          <li><strong>Location:</strong> The App may use location to provide local information. Location may be collected while the App is open. If you enable optional background location features, location may be collected in the background.</li>
+          <li><strong>Remote notifications:</strong> If enabled, we send remote push notifications using <strong>Firebase Cloud Messaging (FCM)</strong> and <strong>Apple Push Notification service (APNs)</strong>.</li>
+          <li><strong>Local notifications:</strong> The App may use on-device notifications for offline reminders or alerts.</li>
+          <li><strong>Tracking (iOS 14+):</strong> Ad personalization may use IDFA only if you allow tracking via Apple’s App Tracking Transparency prompt.</li>
+          <li><strong>No sale of personal data:</strong> We do not sell personal data.</li>
+        </ul>
 
-      <h2 class="section-title"><span class="number">10.</span> Termination</h2>
-      <p>
-        We may suspend or terminate your license if you violate this Agreement. Upon termination, you must stop using the App.
-      </p>
+        <div class="callout">
+          <div class="p muted">
+            Safety note: The App provides informational content and optional alerts. It does not replace emergency services.
+            In an emergency, call your local emergency number.
+          </div>
+        </div>
 
-      <h2 class="section-title"><span class="number">11.</span> App Store Terms</h2>
-      <p>
-        If obtained through Apple App Store or Google Play, you acknowledge this Agreement is between you and the developer,
-        not Apple or Google. Apple and Google are not responsible for the App’s content, support, or legal compliance.
-      </p>
+        <div class="h2">2. Data We Collect and Why</div>
 
-      <h2 class="section-title"><span class="number">12.</span> Governing Law</h2>
-      <p>
-        This Agreement is governed by applicable law in your country of residence, subject to mandatory consumer protection
-        rules.
-      </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Examples</th>
+                <th>Purpose</th>
+                <th>Legal basis (EU/EEA users)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Location data (optional)</strong></td>
+                <td>
+                  Precise location (GPS) when permission is granted.<br/>
+                  Last known location (latitude/longitude) stored on our backend to compute area based alerts.
+                </td>
+                <td>
+                  Provide local features (for example, weather and area context).<br/>
+                  Compute and deliver area based risk notifications.
+                </td>
+                <td>
+                  <strong>Consent</strong> (location permission).<br/>
+                  Where applicable, <strong>performance of a service</strong> you request.
+                </td>
+              </tr>
 
-      <h2 class="section-title"><span class="number">13.</span> Contact</h2>
-      <p>
-        For legal inquiries or support:<br/>
-        <strong>fireguard.app.service@gmail.com</strong><br/>
-        Owner: <strong>Chris Zaikis</strong>
-      </p>
+              <tr>
+                <td><strong>Remote push notification data</strong></td>
+                <td>
+                  Device push token (FCM token and or platform token), notification preference state.
+                </td>
+                <td>
+                  Deliver remote alerts you enable (area based risk notifications).
+                </td>
+                <td>
+                  <strong>Consent</strong> (notifications permission).<br/>
+                  Where applicable, <strong>performance of a service</strong> you request.
+                </td>
+              </tr>
 
-      <footer>
-        &copy; <span id="year"></span> FireGuard 112+. All rights reserved.
-      </footer>
-    </section>
-  </main>
+              <tr>
+                <td><strong>Local notifications (on device)</strong></td>
+                <td>
+                  Notification schedule and settings stored on your device.
+                </td>
+                <td>
+                  Provide offline reminders or alerts you configure.
+                </td>
+                <td>
+                  <strong>Consent</strong> (notifications permission).
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Advertising data (Google AdMob)</strong></td>
+                <td>
+                  Advertising identifier (IDFA if allowed, Android Advertising ID), IP address,
+                  device info, ad impressions, clicks, interactions.
+                </td>
+                <td>
+                  Serve banner ads, measure performance, frequency capping, fraud prevention, reporting.
+                  If allowed, ads may be personalized.
+                </td>
+                <td>
+                  <strong>Consent</strong> for personalized ads where required.<br/>
+                  <strong>Legitimate interests</strong> for basic ad delivery, measurement, and fraud prevention (subject to local law).
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Diagnostics (optional)</strong></td>
+                <td>
+                  Crash logs and basic app device info (app version, OS version).
+                </td>
+                <td>
+                  Improve stability, troubleshoot issues, maintain security.
+                </td>
+                <td>
+                  <strong>Legitimate interests</strong> (app quality and security), subject to local law.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout">
+          <div class="h3">Important clarifications</div>
+          <ul>
+            <li><strong>Last known location:</strong> area based risk alerts may rely on your most recent saved location. If location is not updated for a while, alerts may be less accurate.</li>
+            <li><strong>Background location is optional:</strong> if provided as a feature, you can disable it at any time in device settings. Background location may increase battery usage.</li>
+          </ul>
+        </div>
+
+        <div class="h2">3. Remote Push Notifications (FCM and APNs)</div>
+        <p class="p">
+          If you enable notifications, the App can send remote alerts. We use Firebase Cloud Messaging (FCM) for routing and delivery,
+          and Apple Push Notification service (APNs) for iOS delivery.
+        </p>
+        <p class="p">
+          To send notifications, we store a device push token and, if you allow location, your last known location.
+          We may periodically compute area based risk and send notifications to devices that have alerts enabled.
+        </p>
+        <p class="p">
+          You can disable notifications at any time in your device settings.
+        </p>
+
+        <div class="h2">4. Advertising (Google AdMob) and Your Choices</div>
+        <p class="p">
+          The App displays banner advertisements and uses Google AdMob (Google LLC) to serve ads on iOS and Android.
+        </p>
+
+        <div class="h3">Personalized vs non personalized ads</div>
+        <ul>
+          <li><strong>Personalized ads</strong> may use the advertising identifier and related signals to show more relevant ads.</li>
+          <li><strong>Non personalized ads</strong> are contextual ads shown without using the advertising identifier for personalization.</li>
+        </ul>
+
+        <div class="h3">iOS tracking permission (ATT, iOS 14+)</div>
+        <ul>
+          <li>If you choose <strong>Allow</strong>, AdMob may access IDFA for ad personalization and measurement.</li>
+          <li>If you choose <strong>Ask App Not to Track</strong>, the App will still show ads, typically with limited personalization.</li>
+          <li>You can change your choice anytime in iOS Settings.</li>
+        </ul>
+
+        <p class="p muted">
+          Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a><br/>
+          AdMob Help: <a href="https://support.google.com/admob/" target="_blank" rel="noopener">https://support.google.com/admob/</a>
+        </p>
+
+        <div class="h2">5. Location Data</div>
+        <p class="p">
+          The App may request location permission to provide local functionality and to improve area based alerts.
+        </p>
+        <ul>
+          <li><strong>While Using the App:</strong> location can be used while the App is open (foreground).</li>
+          <li><strong>Background location (optional):</strong> if the App provides a background location feature and you enable it, the App may collect location in the background to keep your alert area up to date.</li>
+          <li><strong>Control:</strong> you can deny or revoke location permission anytime in device settings. Some features may be limited without location.</li>
+        </ul>
+
+        <div class="h2">6. Sharing of Data</div>
+        <p class="p">We share data only as needed to operate the App:</p>
+        <ul>
+          <li><strong>Google (AdMob):</strong> ad delivery, measurement, fraud prevention.</li>
+          <li><strong>Google (FCM):</strong> routing and delivery of remote push notifications.</li>
+          <li><strong>Apple (APNs):</strong> delivery of push notifications to iOS devices.</li>
+          <li><strong>Legal and security:</strong> if required to comply with law or protect users and the App.</li>
+        </ul>
+
+        <div class="h2">7. International Transfers</div>
+        <p class="p">
+          Some providers (for example, Google and Apple) may process data on servers outside your country. Where required, transfers are protected using appropriate safeguards under applicable law.
+        </p>
+
+        <div class="h2">8. Data Retention</div>
+        <ul>
+          <li><strong>Push token:</strong> retained while notifications are enabled and removed or deactivated when disabled or after uninstall where technically available to us.</li>
+          <li><strong>Last known location:</strong> retained only as needed to provide area based alerts and service functionality. You can request deletion.</li>
+          <li><strong>Ad related data:</strong> processed and retained by Google according to Google’s policies.</li>
+          <li><strong>Diagnostics:</strong> retained as needed to resolve issues and improve stability.</li>
+        </ul>
+
+        <div class="h2">9. Security</div>
+        <p class="p">
+          We use reasonable technical and organizational measures to protect data. No method of transmission or storage is 100% secure.
+        </p>
+
+        <div class="h2">10. Your Rights (EU/EEA Users)</div>
+        <p class="p">
+          If you are located in the EU/EEA, you may have GDPR rights, including access, correction, deletion, restriction, objection (where applicable), portability (where applicable), and withdrawal of consent at any time.
+        </p>
+        <p class="p">
+          To exercise your rights, contact <a href="mailto:fireguard.app.service@gmail.com">fireguard.app.service@gmail.com</a>.
+          You also have the right to lodge a complaint with your local data protection authority.
+        </p>
+
+        <div class="h2">11. Children</div>
+        <p class="p">
+          The App is not intended for children under 13. We do not knowingly collect personal data from children under 13.
+        </p>
+
+        <div class="h2">12. Changes to This Policy</div>
+        <p class="p">
+          We may update this Privacy Policy from time to time. We will update the effective date at the top of this page.
+        </p>
+
+        <div id="contact" class="h2 anchor">13. Contact</div>
+        <p class="p">
+          For privacy inquiries or requests:<br/>
+          <strong><a href="mailto:fireguard.app.service@gmail.com">fireguard.app.service@gmail.com</a></strong><br/>
+          <strong>Chris Zaikis</strong>
+        </p>
+
+        <div class="footer">
+          &copy; <span id="year1"></span> FireGuard 112+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EULA -->
+  <div id="eula" class="anchor" style="padding: 0 0 34px;">
+    <div class="container">
+      <div class="card">
+        <div class="h-title" style="font-size:1.8rem;">End User License Agreement (EULA)</div>
+        <div class="h-meta">Applies to FireGuard 112+ on iOS and Android.</div>
+
+        <div class="callout">
+          <p class="p muted">
+            This EULA is a legal agreement between you (“User”) and <strong>Chris Zaikis</strong> (the “Developer”) regarding the use of the FireGuard 112+ mobile application (the “App”).
+          </p>
+        </div>
+
+        <div class="h2">1. Acceptance</div>
+        <p class="p">
+          By downloading, installing, accessing, or using the App, you agree to be bound by this Agreement. If you do not agree, do not use the App and uninstall it.
+        </p>
+
+        <div class="h2">2. License Grant</div>
+        <p class="p">
+          The Developer grants you a limited, revocable, non exclusive, non transferable, and non sublicensable license to use the App for personal, non commercial purposes on devices you own or control.
+        </p>
+
+        <div class="h2">3. Restrictions</div>
+        <p class="p">You agree not to:</p>
+        <ul>
+          <li>Copy, reproduce, distribute, or create derivative works of the App or its content.</li>
+          <li>Reverse engineer, decompile, disassemble, or attempt to extract source code.</li>
+          <li>Circumvent security measures, encryption, or access controls.</li>
+          <li>Use the App for unlawful, harmful, misleading, or unauthorized purposes.</li>
+          <li>Use the App to build or improve a competing product or service.</li>
+        </ul>
+
+        <div class="h2">4. Ownership</div>
+        <p class="p">
+          All rights, title, and interest in the App, including code, design, text, graphics, and trademarks, remain the exclusive property of <strong>Chris Zaikis</strong>. All rights reserved.
+        </p>
+
+        <div class="h2">5. Privacy</div>
+        <p class="p">
+          Use of the App is governed by the Privacy Policy on this page. You can review it in the <a href="#privacy">Privacy Policy</a> section.
+        </p>
+
+        <div class="h2">6. Advertising and Third Party Services</div>
+        <p class="p">
+          The App may display advertisements and uses <strong>Google AdMob</strong> to serve banner ads on iOS and Android.
+          The App may also use third party services for notification delivery (FCM, APNs), platform services, mapping providers, weather APIs, and public data sources.
+          Third party services may process data under their own policies.
+        </p>
+
+        <div class="h2">7. Safety Disclaimer</div>
+        <p class="p">
+          The App provides informational content and optional alerts only. It does not replace emergency services, professional fire authorities, local weather bureaus, or civil protection guidance. The User remains fully responsible for safety decisions.
+        </p>
+
+        <div class="h2">8. No Warranty</div>
+        <p class="p">
+          The App is provided “as is” and “as available” without warranties of any kind, including accuracy, availability, reliability, security, or fitness for a particular purpose. Data sources may be delayed or unavailable.
+        </p>
+
+        <div class="h2">9. Limitation of Liability</div>
+        <p class="p">
+          To the maximum extent permitted by law, the Developer shall not be liable for any direct or indirect damages arising from or related to the use of the App, including inaccurate alerts, service interruptions, or reliance on information.
+        </p>
+
+        <div class="h2">10. Termination</div>
+        <p class="p">
+          The Developer may suspend or terminate your license if you violate this Agreement. Upon termination, you must stop using the App and uninstall it.
+        </p>
+
+        <div class="h2">11. App Store Terms</div>
+        <p class="p">
+          If obtained through Apple App Store or Google Play, you acknowledge this Agreement is between you and the Developer, not Apple or Google. Apple and Google are not responsible for the App’s content, support, or legal compliance.
+        </p>
+
+        <div class="h2">12. Governing Law</div>
+        <p class="p">
+          This Agreement is governed by applicable law in your country of residence, subject to mandatory consumer protection rules.
+        </p>
+
+        <div class="h2">13. Contact</div>
+        <p class="p">
+          For legal inquiries or support:<br/>
+          <strong><a href="mailto:fireguard.app.service@gmail.com">fireguard.app.service@gmail.com</a></strong><br/>
+          Owner: <strong>Chris Zaikis</strong>
+        </p>
+
+        <div class="footer">
+          &copy; <span id="year2"></span> FireGuard 112+
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    const y = new Date().getFullYear();
+    document.getElementById("year1").textContent = y;
+    document.getElementById("year2").textContent = y;
   </script>
 </body>
 </html>
