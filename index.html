@@ -8,282 +8,494 @@
   <meta name="description" content="FireGuard 112+ legal documents: Privacy Policy and End User License Agreement (EULA)." />
   <meta name="robots" content="index,follow" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="FireGuard 112+ Legal" />
   <meta property="og:description" content="Privacy Policy and EULA for FireGuard 112+ (iOS and Android)." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/fire-zaikis.png" />
 
   <style>
-    :root{
-      --bg:#020617;
-      --panel:rgba(255,255,255,0.03);
-      --panel2:rgba(255,255,255,0.02);
-      --border:#1e293b;
-      --text:#e5e7eb;
-      --muted:#9ca3af;
-      --link:#93c5fd;
-      --accent:#fbbf24;
-      --accent2:#22c55e;
-      --shadow: 0 28px 70px rgba(0,0,0,0.55);
-      --radius: 18px;
+    :root {
+      --bg: #07111f;
+      --bg-soft: #0b1728;
+      --surface: rgba(255, 255, 255, 0.045);
+      --surface-strong: rgba(255, 255, 255, 0.07);
+      --surface-hover: rgba(255, 255, 255, 0.09);
+      --border: rgba(148, 163, 184, 0.18);
+      --border-strong: rgba(148, 163, 184, 0.26);
+      --text: #e8eef8;
+      --text-soft: #c5d1e3;
+      --muted: #92a3bc;
+      --link: #8cc7ff;
+      --accent: #f59e0b;
+      --accent-soft: rgba(245, 158, 11, 0.14);
+      --success: #22c55e;
+      --info: #38bdf8;
+      --danger: #fb7185;
+      --shadow-lg: 0 30px 80px rgba(0, 0, 0, 0.42);
+      --shadow-md: 0 18px 40px rgba(0, 0, 0, 0.28);
+      --radius-xl: 24px;
+      --radius-lg: 18px;
+      --radius-md: 14px;
+      --maxw: 1160px;
     }
 
-    *{ box-sizing:border-box; margin:0; padding:0; }
-    html{ scroll-behavior:smooth; }
-    body{
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       min-height: 100vh;
-      line-height: 1.55;
+      line-height: 1.65;
+      background:
+        radial-gradient(circle at 12% 0%, rgba(245, 158, 11, 0.16), transparent 28%),
+        radial-gradient(circle at 88% 8%, rgba(56, 189, 248, 0.14), transparent 30%),
+        radial-gradient(circle at 50% 100%, rgba(34, 197, 94, 0.08), transparent 24%),
+        linear-gradient(180deg, #07111f 0%, #091423 38%, #0a1626 100%);
+      background-attachment: fixed;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
 
-    a{ color: var(--link); text-decoration:none; }
-    a:hover{ text-decoration:underline; }
+    a {
+      color: var(--link);
+      text-decoration: none;
+      transition: color .18s ease, opacity .18s ease;
+    }
 
-    .container{
-      width: min(1100px, calc(100% - 32px));
+    a:hover {
+      color: #b8deff;
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(var(--maxw), calc(100% - 32px));
       margin: 0 auto;
     }
 
-    .topbar{
+    .topbar {
       position: sticky;
       top: 0;
-      z-index: 20;
-      backdrop-filter: blur(10px);
-      background: rgba(2,6,23,0.78);
-      border-bottom: 1px solid rgba(30,41,59,0.7);
+      z-index: 40;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      background: rgba(7, 17, 31, 0.72);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.12);
     }
 
-    .nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 14px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
       gap: 12px;
-      padding: 12px 0;
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:10px;
+      min-width: 220px;
       font-weight: 900;
       letter-spacing: 0.2px;
-      min-width: 200px;
+      color: #f8fbff;
     }
 
-    .logo{
-      width: 34px;
-      height: 34px;
-      border-radius: 10px;
+    .logo {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
       object-fit: cover;
-      border: 1px solid rgba(255,255,255,0.14);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.28);
+      background: rgba(255,255,255,0.04);
     }
 
-    .navlinks{
-      display:flex;
+    .navlinks {
+      display: flex;
       gap: 10px;
       flex-wrap: wrap;
       justify-content: flex-end;
     }
 
-    .navlinks a{
-      padding: 8px 12px;
-      border: 1px solid rgba(51,65,85,0.75);
+    .navlinks a {
+      padding: 10px 14px;
+      border: 1px solid rgba(148, 163, 184, 0.16);
       border-radius: 999px;
-      background: rgba(255,255,255,0.02);
-      color: var(--text);
+      background: rgba(255,255,255,0.035);
+      color: var(--text-soft);
       font-size: 0.92rem;
+      font-weight: 700;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
     }
 
-    .hero{
-      padding: 40px 0 18px;
+    .navlinks a:hover {
+      text-decoration: none;
+      color: #ffffff;
+      border-color: rgba(245, 158, 11, 0.34);
+      background: rgba(245, 158, 11, 0.08);
     }
 
-    .hero-card{
+    .hero {
+      padding: 42px 0 18px;
+    }
+
+    .hero-card,
+    .card {
+      position: relative;
+      overflow: hidden;
       border: 1px solid var(--border);
-      border-radius: var(--radius);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
       background:
-        radial-gradient(800px 360px at 20% 0%, rgba(249,115,22,0.16), transparent 50%),
-        radial-gradient(700px 320px at 80% 10%, rgba(34,197,94,0.14), transparent 52%),
-        radial-gradient(900px 420px at 50% 0%, rgba(14,165,233,0.12), transparent 55%),
-        rgba(255,255,255,0.02);
-      box-shadow: var(--shadow);
-      padding: 26px 22px;
+        linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025)),
+        rgba(10, 22, 38, 0.78);
     }
 
-    @media (min-width: 800px){
-      .hero-card{ padding: 34px 34px; }
+    .hero-card::before,
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), transparent 16%);
     }
 
-    .h-title{
-      font-size: 2.05rem;
+    .hero-card {
+      padding: 28px 22px;
+      background:
+        radial-gradient(800px 380px at 8% 0%, rgba(245, 158, 11, 0.16), transparent 44%),
+        radial-gradient(720px 320px at 92% 10%, rgba(56, 189, 248, 0.14), transparent 42%),
+        radial-gradient(780px 360px at 50% 100%, rgba(34, 197, 94, 0.07), transparent 42%),
+        linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025)),
+        rgba(10, 22, 38, 0.82);
+    }
+
+    @media (min-width: 800px) {
+      .hero-card { padding: 38px 36px; }
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(245, 158, 11, 0.22);
+      background: rgba(245, 158, 11, 0.08);
+      color: #ffdca0;
+      font-weight: 800;
+      font-size: 0.84rem;
+      margin-bottom: 16px;
+    }
+
+    .eyebrow .spark {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(245, 158, 11, 0.08);
+    }
+
+    .h-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.08;
       font-weight: 950;
-      margin-bottom: 8px;
-      color: #f9fafb;
-    }
-    .h-sub{
-      color: rgba(229,231,235,0.92);
+      letter-spacing: -0.03em;
+      color: #fbfdff;
       margin-bottom: 10px;
     }
-    .h-meta{
+
+    .h-sub {
+      color: var(--text-soft);
+      font-size: 1.03rem;
+      max-width: 760px;
+      margin-bottom: 12px;
+    }
+
+    .h-meta {
       color: var(--muted);
       font-size: 0.95rem;
     }
 
-    .kicker{
-      display:flex;
-      flex-wrap:wrap;
-      gap: 8px;
-      margin-top: 14px;
+    .h-meta strong {
+      color: #f7fbff;
     }
-    .pill{
-      display:inline-flex;
-      align-items:center;
+
+    .kicker {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
       gap: 8px;
-      border: 1px solid rgba(51,65,85,0.85);
+      border: 1px solid rgba(148, 163, 184, 0.16);
       border-radius: 999px;
-      padding: 5px 10px;
-      background: rgba(255,255,255,0.02);
-      color: var(--text);
-      font-size: 0.86rem;
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.04);
+      color: var(--text-soft);
+      font-size: 0.88rem;
+      font-weight: 700;
     }
-    .dot{
-      width: 8px; height: 8px;
+
+    .dot {
+      width: 8px;
+      height: 8px;
       border-radius: 999px;
       background: var(--accent);
     }
-    .dot.green{ background: var(--accent2); }
-    .dot.blue{ background: #0ea5e9; }
 
-    .grid{
-      display:grid;
+    .dot.green { background: var(--success); }
+    .dot.blue { background: var(--info); }
+
+    .grid {
+      display: grid;
       grid-template-columns: 1fr;
-      gap: 14px;
-      margin-top: 14px;
-    }
-    @media (min-width: 900px){
-      .grid{ grid-template-columns: 1.05fr 0.95fr; }
+      gap: 16px;
+      margin-top: 16px;
     }
 
-    .card{
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      background: var(--panel2);
-      box-shadow: var(--shadow);
-      padding: 22px 18px;
-    }
-    @media (min-width: 800px){
-      .card{ padding: 26px 22px; }
+    @media (min-width: 900px) {
+      .grid { grid-template-columns: 1.05fr 0.95fr; }
     }
 
-    .h2{
-      font-size: 1.15rem;
+    .card {
+      padding: 24px 18px;
+    }
+
+    @media (min-width: 800px) {
+      .card { padding: 30px 26px; }
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .section-title .bar {
+      width: 12px;
+      height: 28px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, var(--accent), #f97316);
+      box-shadow: 0 10px 30px rgba(245, 158, 11, 0.24);
+    }
+
+    .h2 {
+      font-size: 1.18rem;
       font-weight: 900;
-      margin: 18px 0 8px;
+      letter-spacing: -0.01em;
+      margin: 22px 0 10px;
+      color: #f8fbff;
     }
-    .h3{
+
+    .h3 {
       font-size: 1.02rem;
-      font-weight: 900;
-      margin: 14px 0 6px;
+      font-weight: 850;
+      margin: 16px 0 8px;
+      color: #f6faff;
     }
-    .p{
-      color: var(--text);
+
+    .p {
+      color: var(--text-soft);
       margin: 8px 0;
       font-size: 0.98rem;
     }
-    .muted{ color: var(--muted); }
 
-    .toc{
-      border: 1px solid rgba(51,65,85,0.8);
-      background: rgba(255,255,255,0.02);
-      border-radius: 16px;
+    .muted { color: var(--muted); }
+
+    .toc {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.035);
+      border-radius: 18px;
       padding: 14px 14px;
     }
-    .toc a{ display:block; padding: 6px 0; color: var(--text); }
-    .toc a span{ color: var(--muted); }
 
-    ul{ margin: 8px 0 14px 18px; }
-    li{ margin: 6px 0; color: var(--text); }
+    .toc a {
+      display: block;
+      padding: 10px 12px;
+      border-radius: 12px;
+      color: var(--text);
+      transition: background .18s ease, border-color .18s ease;
+      border: 1px solid transparent;
+    }
 
-    .table-wrap{ overflow-x:auto; margin-top: 10px; }
-    table{
+    .toc a:hover {
+      text-decoration: none;
+      background: rgba(255,255,255,0.04);
+      border-color: rgba(148,163,184,0.14);
+    }
+
+    .toc a span { color: var(--muted); }
+
+    ul {
+      margin: 8px 0 16px 20px;
+    }
+
+    li {
+      margin: 8px 0;
+      color: var(--text-soft);
+    }
+
+    strong {
+      color: #f9fbff;
+      font-weight: 850;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin-top: 12px;
+      border-radius: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.14);
+      background: rgba(255,255,255,0.02);
+    }
+
+    table {
       width: 100%;
       border-collapse: collapse;
-      min-width: 820px;
-      border: 1px solid rgba(31,41,55,0.9);
-      border-radius: 14px;
-      overflow: hidden;
+      min-width: 860px;
     }
-    th, td{
-      padding: 12px 12px;
-      border-bottom: 1px solid rgba(31,41,55,0.9);
+
+    th, td {
+      padding: 14px 14px;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.10);
       vertical-align: top;
       font-size: 0.93rem;
-    }
-    th{
-      text-align:left;
-      color:#f9fafb;
-      background: rgba(255,255,255,0.03);
-    }
-    tr:last-child td{ border-bottom:none; }
-
-    .callout{
-      border: 1px solid rgba(51,65,85,0.85);
-      background: rgba(255,255,255,0.03);
-      border-radius: 16px;
-      padding: 14px 14px;
-      margin-top: 12px;
+      color: var(--text-soft);
     }
 
-    .footer{
-      margin: 18px 0 34px;
-      padding-top: 16px;
-      border-top: 1px solid rgba(31,41,55,0.9);
+    th {
+      text-align: left;
+      color: #f9fbff;
+      background: rgba(255,255,255,0.05);
+      font-weight: 850;
+      position: sticky;
+      top: 0;
+    }
+
+    tr:hover td {
+      background: rgba(255,255,255,0.018);
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    .callout {
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
+      border-radius: 18px;
+      padding: 15px 15px;
+      margin-top: 14px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .callout.warn {
+      border-color: rgba(245, 158, 11, 0.22);
+      background: linear-gradient(180deg, rgba(245, 158, 11, 0.09), rgba(255,255,255,0.025));
+    }
+
+    .footer {
+      margin: 22px 0 8px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(148, 163, 184, 0.12);
       color: var(--muted);
       font-size: 0.92rem;
       text-align: center;
     }
 
-    code{
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(31,41,55,0.95);
-      padding: 2px 6px;
-      border-radius: 8px;
+    code {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(148, 163, 184, 0.14);
+      padding: 3px 7px;
+      border-radius: 9px;
+      color: #f4f8ff;
+      font-size: 0.9em;
     }
 
-    .anchor{
-      scroll-margin-top: 84px;
+    .anchor {
+      scroll-margin-top: 90px;
     }
 
-    .two-col{
-      display:grid;
+    .two-col {
+      display: grid;
       grid-template-columns: 1fr;
       gap: 12px;
-      margin-top: 10px;
-    }
-    @media (min-width: 900px){
-      .two-col{ grid-template-columns: 1fr 1fr; }
+      margin-top: 16px;
     }
 
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding: 10px 12px;
-      border-radius: 12px;
-      border: 1px solid rgba(51,65,85,0.85);
-      background: rgba(255,255,255,0.03);
+    @media (min-width: 900px) {
+      .two-col { grid-template-columns: 1fr 1fr; }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.035));
       color: var(--text);
-      font-weight: 800;
+      font-weight: 850;
       gap: 10px;
       text-decoration: none;
       width: 100%;
+      box-shadow: 0 12px 26px rgba(0,0,0,0.18);
+      transition: transform .18s ease, border-color .18s ease, background .18s ease, box-shadow .18s ease;
     }
-    .btn:hover{ text-decoration:none; border-color: rgba(251,191,36,0.7); }
-    .btn small{ color: var(--muted); font-weight: 700; }
+
+    .btn:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+      border-color: rgba(245, 158, 11, 0.30);
+      background: linear-gradient(180deg, rgba(245, 158, 11, 0.10), rgba(255,255,255,0.04));
+      box-shadow: 0 18px 30px rgba(0,0,0,0.22);
+    }
+
+    .btn small {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .divider {
+      height: 1px;
+      border: none;
+      background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.22), transparent);
+      margin: 20px 0;
+    }
+
+    .label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.16);
+      color: #cfefff;
+      font-size: 0.84rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 720px) {
+      .nav {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .brand {
+        justify-content: center;
+      }
+
+      .navlinks {
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 
@@ -308,40 +520,43 @@
   <div id="top" class="hero anchor">
     <div class="container">
       <div class="hero-card">
-        <div class="h-title">Legal Documents</div>
-        <div class="h-sub">Privacy Policy and End User License Agreement for FireGuard 112+ (iOS and Android).</div>
+        <div class="eyebrow"><span class="spark"></span> Official Legal Documentation</div>
+        <div class="h-title">FireGuard 112+ Legal Documents</div>
+        <div class="h-sub">Privacy Policy and End User License Agreement for FireGuard 112+ across iOS and Android, presented in a clean, professional legal layout.</div>
         <div class="h-meta">
-          Effective date: <strong>1 March 2026</strong> · Recommended for store listings: link to this page, or to the sections below.
+          Effective date: <strong>1 March 2026</strong> · Recommended for store listings: link to this page or directly to the relevant section below.
         </div>
 
         <div class="kicker" aria-label="Highlights">
           <div class="pill"><span class="dot blue"></span> iOS + Android</div>
-          <div class="pill"><span class="dot"></span> AdMob banners</div>
-          <div class="pill"><span class="dot green"></span> Remote push (FCM/APNs)</div>
+          <div class="pill"><span class="dot"></span> Google AdMob</div>
+          <div class="pill"><span class="dot green"></span> FCM + APNs</div>
           <div class="pill"><span class="dot blue"></span> Location permissions</div>
-          <div class="pill"><span class="dot"></span> ATT (iOS 14+)</div>
+          <div class="pill"><span class="dot"></span> ATT ready</div>
         </div>
 
         <div class="two-col">
           <a class="btn" href="#privacy">
-            Privacy Policy <small>location, ads, notifications</small>
+            Privacy Policy <small>data, ads, location, notifications</small>
           </a>
           <a class="btn" href="#eula">
-            EULA <small>license terms and disclaimers</small>
+            EULA <small>license terms and legal disclaimers</small>
           </a>
         </div>
 
-        <div class="callout" style="margin-top:14px;">
+        <div class="callout warn" style="margin-top:16px;">
           <div class="p muted">
-            Tip for App Store Connect: set the Privacy Policy URL to your site root.
-            Reviewers can access the Privacy Policy section directly via the “Privacy” navigation or the <code>#privacy</code> section.
+            App Store Connect tip: set your Privacy Policy URL to your legal page root. Reviewers can open the Privacy section from the top navigation or directly via <code>#privacy</code>.
           </div>
         </div>
       </div>
 
       <div class="grid">
         <div class="card">
-          <div class="h2">Quick links</div>
+          <div class="section-title">
+            <span class="bar"></span>
+            <div class="h2" style="margin:0;">Quick links</div>
+          </div>
           <div class="toc">
             <a href="#privacy"><strong>Privacy Policy</strong> <span>data collection, ads, location, notifications</span></a>
             <a href="#eula"><strong>EULA</strong> <span>license grant, restrictions, disclaimers</span></a>
@@ -350,23 +565,25 @@
         </div>
 
         <div class="card">
-          <div class="h2">Owner and contact</div>
+          <div class="section-title">
+            <span class="bar"></span>
+            <div class="h2" style="margin:0;">Owner and contact</div>
+          </div>
           <p class="p"><strong>Controller (Developer):</strong> Chris Zaikis</p>
           <p class="p"><strong>Email:</strong> <a href="mailto:ocysoft@outlook.com">ocysoft@outlook.com</a></p>
           <p class="p muted">
-            If you have privacy questions or requests (access, deletion, objection), contact the email above.
+            For privacy questions or data rights requests, contact the email above.
           </p>
         </div>
       </div>
-
     </div>
   </div>
 
-  <!-- PRIVACY POLICY -->
   <div id="privacy" class="anchor" style="padding: 14px 0 34px;">
     <div class="container">
       <div class="card">
-        <div class="h-title" style="font-size:1.8rem;">Privacy Policy</div>
+        <div class="label">Privacy & Data Handling</div>
+        <div class="h-title" style="font-size:1.86rem;">Privacy Policy</div>
         <div class="h-meta">Applies to FireGuard 112+ on iOS and Android.</div>
 
         <div class="callout">
@@ -385,10 +602,9 @@
           <li><strong>No sale of personal data:</strong> We do not sell personal data.</li>
         </ul>
 
-        <div class="callout">
+        <div class="callout warn">
           <div class="p muted">
-            Safety note: The App provides informational content and optional alerts. It does not replace emergency services.
-            In an emergency, call your local emergency number.
+            Safety note: The App provides informational content and optional alerts. It does not replace emergency services. In an emergency, call your local emergency number.
           </div>
         </div>
 
@@ -460,7 +676,7 @@
                 </td>
                 <td>
                   <strong>Consent</strong> for personalized ads where required.<br/>
-                  <strong>Legitimate interests</strong> for basic ad delivery, measurement, and fraud prevention (subject to local law).
+                  <strong>Legitimate interests</strong> for basic ad delivery, measurement, and fraud prevention, subject to local law.
                 </td>
               </tr>
 
@@ -490,12 +706,10 @@
 
         <div class="h2">3. Remote Push Notifications (FCM and APNs)</div>
         <p class="p">
-          If you enable notifications, the App can send remote alerts. We use Firebase Cloud Messaging (FCM) for routing and delivery,
-          and Apple Push Notification service (APNs) for iOS delivery.
+          If you enable notifications, the App can send remote alerts. We use Firebase Cloud Messaging (FCM) for routing and delivery, and Apple Push Notification service (APNs) for iOS delivery.
         </p>
         <p class="p">
-          To send notifications, we store a device push token and, if you allow location, your last known location.
-          We may periodically compute area based risk and send notifications to devices that have alerts enabled.
+          To send notifications, we store a device push token and, if you allow location, your last known location. We may periodically compute area based risk and send notifications to devices that have alerts enabled.
         </p>
         <p class="p">
           You can disable notifications at any time in your device settings.
@@ -545,7 +759,7 @@
 
         <div class="h2">7. International Transfers</div>
         <p class="p">
-          Some providers (for example, Google and Apple) may process data on servers outside your country. Where required, transfers are protected using appropriate safeguards under applicable law.
+          Some providers, for example Google and Apple, may process data on servers outside your country. Where required, transfers are protected using appropriate safeguards under applicable law.
         </p>
 
         <div class="h2">8. Data Retention</div>
@@ -563,11 +777,10 @@
 
         <div class="h2">10. Your Rights (EU/EEA Users)</div>
         <p class="p">
-          If you are located in the EU/EEA, you may have GDPR rights, including access, correction, deletion, restriction, objection (where applicable), portability (where applicable), and withdrawal of consent at any time.
+          If you are located in the EU/EEA, you may have GDPR rights, including access, correction, deletion, restriction, objection where applicable, portability where applicable, and withdrawal of consent at any time.
         </p>
         <p class="p">
-          To exercise your rights, contact <a href="mailto: ocysoft@outlook.com">ocysoft@outlook.com</a>.
-          You also have the right to lodge a complaint with your local data protection authority.
+          To exercise your rights, contact <a href="mailto:ocysoft@outlook.com">ocysoft@outlook.com</a>. You also have the right to lodge a complaint with your local data protection authority.
         </p>
 
         <div class="h2">11. Children</div>
@@ -594,11 +807,11 @@
     </div>
   </div>
 
-  <!-- EULA -->
   <div id="eula" class="anchor" style="padding: 0 0 34px;">
     <div class="container">
       <div class="card">
-        <div class="h-title" style="font-size:1.8rem;">End User License Agreement (EULA)</div>
+        <div class="label">License Terms</div>
+        <div class="h-title" style="font-size:1.86rem;">End User License Agreement (EULA)</div>
         <div class="h-meta">Applies to FireGuard 112+ on iOS and Android.</div>
 
         <div class="callout">
@@ -639,9 +852,7 @@
 
         <div class="h2">6. Advertising and Third Party Services</div>
         <p class="p">
-          The App may display advertisements and uses <strong>Google AdMob</strong> to serve banner ads on iOS and Android.
-          The App may also use third party services for notification delivery (FCM, APNs), platform services, mapping providers, weather APIs, and public data sources.
-          Third party services may process data under their own policies.
+          The App may display advertisements and uses <strong>Google AdMob</strong> to serve banner ads on iOS and Android. The App may also use third party services for notification delivery (FCM, APNs), platform services, mapping providers, weather APIs, and public data sources. Third party services may process data under their own policies.
         </p>
 
         <div class="h2">7. Safety Disclaimer</div>
