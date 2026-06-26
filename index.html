@@ -5,23 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>FireGuard 112+ Legal</title>
-  <meta name="description" content="Official FireGuard 112+ legal documents: Privacy Policy, Intellectual Property Notice, and End User License Agreement (EULA)." />
+  <meta name="description" content="Official FireGuard 112+ legal documents: Privacy Policy, Intellectual Property Notice, Anti-Copying Terms and End User License Agreement." />
   <meta name="robots" content="index,follow" />
 
   <meta property="og:title" content="FireGuard 112+ Legal" />
-  <meta property="og:description" content="Official FireGuard 112+ Privacy Policy, Intellectual Property Notice, and EULA for iOS and Android." />
+  <meta property="og:description" content="Official FireGuard 112+ Privacy Policy, Intellectual Property Notice, Anti-Copying Terms and EULA for iOS and Android." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/fire-zaikis.png" />
 
   <style>
     :root {
       --bg: #0b1117;
-      --bg-soft: #121922;
-      --surface: rgba(255, 255, 255, 0.045);
-      --surface-strong: rgba(255, 255, 255, 0.07);
-      --surface-hover: rgba(255, 255, 255, 0.09);
-      --border: rgba(255, 122, 89, 0.16);
-      --border-strong: rgba(255, 122, 89, 0.26);
+      --surface: rgba(255, 255, 255, 0.05);
+      --surface-strong: rgba(255, 255, 255, 0.075);
+      --border: rgba(255, 122, 89, 0.18);
+      --border-strong: rgba(255, 122, 89, 0.32);
       --text: #eef2f7;
       --text-soft: #d7dde8;
       --muted: #9aa6b8;
@@ -32,7 +30,6 @@
       --shadow-md: 0 18px 40px rgba(0, 0, 0, 0.30);
       --radius-xl: 24px;
       --radius-lg: 18px;
-      --radius-md: 14px;
       --maxw: 1160px;
     }
 
@@ -54,21 +51,10 @@
       text-rendering: optimizeLegibility;
     }
 
-    a {
-      color: var(--link);
-      text-decoration: none;
-      transition: color .18s ease, opacity .18s ease;
-    }
+    a { color: var(--link); text-decoration: none; transition: color .18s ease, opacity .18s ease; }
+    a:hover { color: #ffb29f; text-decoration: underline; }
 
-    a:hover {
-      color: #ffb29f;
-      text-decoration: underline;
-    }
-
-    .container {
-      width: min(var(--maxw), calc(100% - 32px));
-      margin: 0 auto;
-    }
+    .container { width: min(var(--maxw), calc(100% - 32px)); margin: 0 auto; }
 
     .topbar {
       position: sticky;
@@ -133,12 +119,9 @@
       background: rgba(220, 38, 38, 0.10);
     }
 
-    .hero {
-      padding: 42px 0 18px;
-    }
+    .hero { padding: 42px 0 18px; }
 
-    .hero-card,
-    .card {
+    .hero-card, .card {
       position: relative;
       overflow: hidden;
       border: 1px solid var(--border);
@@ -149,8 +132,7 @@
         rgba(18, 25, 34, 0.82);
     }
 
-    .hero-card::before,
-    .card::before {
+    .hero-card::before, .card::before {
       content: "";
       position: absolute;
       inset: 0;
@@ -170,6 +152,7 @@
 
     @media (min-width: 800px) {
       .hero-card { padding: 38px 36px; }
+      .card { padding: 30px 26px; }
     }
 
     .eyebrow {
@@ -203,28 +186,11 @@
       margin-bottom: 10px;
     }
 
-    .h-sub {
-      color: var(--text-soft);
-      font-size: 1.03rem;
-      max-width: 820px;
-      margin-bottom: 12px;
-    }
+    .h-sub { color: var(--text-soft); font-size: 1.03rem; max-width: 860px; margin-bottom: 12px; }
+    .h-meta { color: var(--muted); font-size: 0.95rem; }
+    .h-meta strong { color: #fff8f6; }
 
-    .h-meta {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .h-meta strong {
-      color: #fff8f6;
-    }
-
-    .kicker {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-    }
+    .kicker { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
 
     .pill {
       display: inline-flex;
@@ -239,15 +205,9 @@
       font-weight: 700;
     }
 
-    .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      background: var(--accent);
-    }
-
-    .dot.green { background: var(--accent-2); }
-    .dot.blue { background: #ff6b57; }
+    .dot { width: 8px; height: 8px; border-radius: 999px; background: var(--accent); }
+    .dot.orange { background: var(--accent-2); }
+    .dot.light { background: #ff6b57; }
 
     .grid {
       display: grid;
@@ -260,21 +220,9 @@
       .grid { grid-template-columns: 1.05fr 0.95fr; }
     }
 
-    .card {
-      padding: 24px 18px;
-    }
+    .card { padding: 24px 18px; margin-bottom: 34px; }
 
-    @media (min-width: 800px) {
-      .card { padding: 30px 26px; }
-    }
-
-    .section-title {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 12px;
-    }
-
+    .section-title { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
     .section-title .bar {
       width: 12px;
       height: 28px;
@@ -283,34 +231,17 @@
       box-shadow: 0 10px 30px rgba(220, 38, 38, 0.26);
     }
 
-    .h2 {
-      font-size: 1.18rem;
-      font-weight: 900;
-      letter-spacing: -0.01em;
-      margin: 22px 0 10px;
-      color: #fff8f6;
-    }
-
-    .h3 {
-      font-size: 1.02rem;
-      font-weight: 850;
-      margin: 16px 0 8px;
-      color: #fff4f0;
-    }
-
-    .p {
-      color: var(--text-soft);
-      margin: 8px 0;
-      font-size: 0.98rem;
-    }
-
+    .h2 { font-size: 1.18rem; font-weight: 900; letter-spacing: -0.01em; margin: 22px 0 10px; color: #fff8f6; }
+    .h3 { font-size: 1.02rem; font-weight: 850; margin: 16px 0 8px; color: #fff4f0; }
+    .p { color: var(--text-soft); margin: 8px 0; font-size: 0.98rem; }
     .muted { color: var(--muted); }
+    strong { color: #fff9f7; font-weight: 850; }
 
     .toc {
       border: 1px solid var(--border);
       background: rgba(255,255,255,0.035);
       border-radius: 18px;
-      padding: 14px 14px;
+      padding: 14px;
     }
 
     .toc a {
@@ -330,19 +261,8 @@
 
     .toc a span { color: var(--muted); }
 
-    ul {
-      margin: 8px 0 16px 20px;
-    }
-
-    li {
-      margin: 8px 0;
-      color: var(--text-soft);
-    }
-
-    strong {
-      color: #fff9f7;
-      font-weight: 850;
-    }
+    ul { margin: 8px 0 16px 20px; }
+    li { margin: 8px 0; color: var(--text-soft); }
 
     .table-wrap {
       overflow-x: auto;
@@ -352,14 +272,10 @@
       background: rgba(255,255,255,0.02);
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 860px;
-    }
+    table { width: 100%; border-collapse: collapse; min-width: 880px; }
 
     th, td {
-      padding: 14px 14px;
+      padding: 14px;
       border-bottom: 1px solid rgba(255, 122, 89, 0.10);
       vertical-align: top;
       font-size: 0.93rem;
@@ -375,23 +291,20 @@
       top: 0;
     }
 
-    tr:hover td {
-      background: rgba(220, 38, 38, 0.035);
-    }
-
+    tr:hover td { background: rgba(220, 38, 38, 0.035); }
     tr:last-child td { border-bottom: none; }
 
     .callout {
       border: 1px solid rgba(255, 122, 89, 0.16);
       background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
       border-radius: 18px;
-      padding: 15px 15px;
+      padding: 15px;
       margin-top: 14px;
       box-shadow: var(--shadow-md);
     }
 
     .callout.warn {
-      border-color: rgba(220, 38, 38, 0.24);
+      border-color: rgba(220, 38, 38, 0.26);
       background: linear-gradient(180deg, rgba(220, 38, 38, 0.12), rgba(255,255,255,0.025));
     }
 
@@ -400,17 +313,18 @@
       background: linear-gradient(180deg, rgba(220, 38, 38, 0.16), rgba(255,255,255,0.03));
     }
 
-    .footer {
-      margin: 22px 0 8px;
-      padding-top: 18px;
-      border-top: 1px solid rgba(255, 122, 89, 0.12);
-      color: var(--muted);
-      font-size: 0.92rem;
-      text-align: center;
-    }
-
-    .anchor {
-      scroll-margin-top: 90px;
+    .label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(220, 38, 38, 0.10);
+      border: 1px solid rgba(220, 38, 38, 0.18);
+      color: #ffd2cb;
+      font-size: 0.84rem;
+      font-weight: 800;
+      margin-bottom: 12px;
     }
 
     .two-col {
@@ -450,38 +364,24 @@
       box-shadow: 0 18px 30px rgba(0,0,0,0.22);
     }
 
-    .btn small {
+    .btn small { color: var(--muted); font-weight: 700; }
+
+    .footer {
+      margin: 22px 0 8px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 122, 89, 0.12);
       color: var(--muted);
-      font-weight: 700;
+      font-size: 0.92rem;
+      text-align: center;
     }
 
-    .label {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(220, 38, 38, 0.10);
-      border: 1px solid rgba(220, 38, 38, 0.18);
-      color: #ffd2cb;
-      font-size: 0.84rem;
-      font-weight: 800;
-      margin-bottom: 12px;
-    }
+    .anchor { scroll-margin-top: 92px; }
 
     @media (max-width: 720px) {
-      .nav {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .brand {
-        justify-content: center;
-      }
-
-      .navlinks {
-        justify-content: center;
-      }
+      .nav { flex-direction: column; align-items: stretch; }
+      .brand { justify-content: center; }
+      .navlinks { justify-content: center; }
+      table { min-width: 760px; }
     }
   </style>
 </head>
@@ -499,114 +399,109 @@
           <a href="#privacy">Privacy</a>
           <a href="#ip">IP Notice</a>
           <a href="#eula">EULA</a>
+          <a href="#damages">€20M Clause</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="top" class="hero anchor">
+  <main id="top" class="hero anchor">
     <div class="container">
-      <div class="hero-card">
+      <section class="hero-card">
         <div class="eyebrow"><span class="spark"></span> Official Legal Documentation</div>
-        <div class="h-title">FireGuard 112+ Legal Documents</div>
-        <div class="h-sub">
-          Official Privacy Policy, Intellectual Property Notice, and End User License Agreement for FireGuard 112+ across iOS and Android.
-        </div>
-        <div class="h-meta">
-          Effective date: <strong>4 April 2026</strong> · Last updated: <strong>4 April 2026</strong>
-        </div>
+        <h1 class="h-title">FireGuard 112+ Legal Documents</h1>
+        <p class="h-sub">
+          Official Privacy Policy, Intellectual Property Notice, Anti-Copying Terms, Public Sector Restriction Notice and End User License Agreement for FireGuard 112+ across iOS, Android, web pages, demos, documentation and related materials.
+        </p>
+        <p class="h-meta">
+          Effective date: <strong>26 June 2026</strong> · Last updated: <strong>26 June 2026</strong>
+        </p>
 
         <div class="kicker" aria-label="Highlights">
-          <div class="pill"><span class="dot blue"></span> iOS + Android</div>
-          <div class="pill"><span class="dot"></span> All Rights Reserved</div>
-          <div class="pill"><span class="dot green"></span> IP Protection</div>
-          <div class="pill"><span class="dot blue"></span> Anti-Copying Terms</div>
+          <div class="pill"><span class="dot light"></span> iOS + Android</div>
+          <div class="pill"><span class="dot"></span> No Third-Party Ads Currently Displayed</div>
+          <div class="pill"><span class="dot orange"></span> All Rights Reserved</div>
+          <div class="pill"><span class="dot light"></span> Anti-Copying Terms</div>
           <div class="pill"><span class="dot"></span> No Implied License</div>
         </div>
 
         <div class="two-col">
-          <a class="btn" href="#privacy">
-            Privacy Policy <small>data, ads, location, notifications</small>
-          </a>
-          <a class="btn" href="#ip">
-            IP Notice <small>ownership, anti-copying, enforcement</small>
-          </a>
-          <a class="btn" href="#eula">
-            EULA <small>license grant, restrictions, remedies</small>
-          </a>
-          <a class="btn" href="#contact">
-            Contact <small>privacy, permissions, infringement reports</small>
-          </a>
+          <a class="btn" href="#privacy">Privacy Policy <small>data, location, notifications</small></a>
+          <a class="btn" href="#ip">IP Notice <small>ownership, anti-copying, enforcement</small></a>
+          <a class="btn" href="#eula">EULA <small>license grant, restrictions, remedies</small></a>
+          <a class="btn" href="#damages">€20M Clause <small>contractual penalty / damages notice</small></a>
         </div>
 
-        <div class="callout strong" style="margin-top:16px;">
-          <div class="p">
-            <strong>Important legal notice:</strong> Except for the limited rights expressly granted on this page, no right, title, license, consent, or authorization is granted, whether expressly, by implication, by estoppel, by exhaustion, or otherwise. Any use not expressly permitted in writing by the Developer is prohibited.
-          </div>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <div class="section-title">
-            <span class="bar"></span>
-            <div class="h2" style="margin:0;">Quick links</div>
-          </div>
-          <div class="toc">
-            <a href="#privacy"><strong>Privacy Policy</strong> <span>data collection, ads, location, notifications</span></a>
-            <a href="#ip"><strong>Intellectual Property Notice</strong> <span>anti-copying, anti-cloning, enforcement</span></a>
-            <a href="#eula"><strong>EULA</strong> <span>license grant, restrictions, disclaimers, remedies</span></a>
-            <a href="#contact"><strong>Contact</strong> <span>privacy requests, permissions, infringement reports</span></a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="section-title">
-            <span class="bar"></span>
-            <div class="h2" style="margin:0;">Owner and contact</div>
-          </div>
-          <p class="p"><strong>Owner / Developer / Rights Holder:</strong> Chris Zaikis</p>
-          <p class="p"><strong>Email:</strong> <a href="mailto:ocysoft@outlook.com">ocysoft@outlook.com</a></p>
-          <p class="p muted">
-            For privacy requests, legal permissions, partnership inquiries, or infringement reports, contact the email above.
+        <div class="callout strong">
+          <p class="p">
+            <strong>Strict reservation of rights:</strong> Except for the limited rights expressly granted on this page, no right, title, license, consent, authorization or permission is granted, whether expressly, by implication, by estoppel, by exhaustion, by tolerance, by disclosure, by publication, by demonstration, by evaluation, by public-sector review, or otherwise. Any use not expressly permitted in writing by the Rights Holder is prohibited.
           </p>
         </div>
+      </section>
+
+      <div class="grid">
+        <section class="card">
+          <div class="section-title">
+            <span class="bar"></span>
+            <h2 class="h2" style="margin:0;">Quick links</h2>
+          </div>
+          <div class="toc">
+            <a href="#privacy"><strong>Privacy Policy</strong> <span>personal data, location, notifications, retention, rights</span></a>
+            <a href="#ip"><strong>Intellectual Property Notice</strong> <span>software, UI, brand, content, databases, trade secrets</span></a>
+            <a href="#publicsector"><strong>Public Sector Restriction Notice</strong> <span>government evaluation does not create license rights</span></a>
+            <a href="#eula"><strong>EULA</strong> <span>license, restrictions, disclaimers, termination</span></a>
+            <a href="#damages"><strong>Contractual Penalty / Damages Notice</strong> <span>unauthorized copying, cloning, misuse</span></a>
+            <a href="#contact"><strong>Contact</strong> <span>permissions, privacy requests, infringement reports</span></a>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="section-title">
+            <span class="bar"></span>
+            <h2 class="h2" style="margin:0;">Owner and contact</h2>
+          </div>
+          <p class="p"><strong>Owner / Developer / Rights Holder:</strong> Christos Zaikis, also known as Chris Zaikis</p>
+          <p class="p"><strong>Product:</strong> FireGuard 112+</p>
+          <p class="p"><strong>Email:</strong> <a href="mailto:ocysoft@outlook.com">ocysoft@outlook.com</a></p>
+          <p class="p muted">
+            For privacy requests, permissions, licensing, public-sector evaluation terms, partnership inquiries, or infringement reports, contact the email above.
+          </p>
+        </section>
       </div>
     </div>
-  </div>
+  </main>
 
-  <div id="privacy" class="anchor" style="padding: 14px 0 34px;">
+  <section id="privacy" class="anchor">
     <div class="container">
       <div class="card">
         <div class="label">Privacy & Data Handling</div>
-        <div class="h-title" style="font-size:1.86rem;">Privacy Policy</div>
-        <div class="h-meta">Applies to FireGuard 112+ on iOS and Android.</div>
+        <h2 class="h-title" style="font-size:1.86rem;">Privacy Policy</h2>
+        <p class="h-meta">Applies to FireGuard 112+ on iOS, Android, web pages and related services.</p>
 
         <div class="callout">
-          <div class="p">
-            This Privacy Policy explains how FireGuard 112+ (the “App”) collects, uses, stores, and shares data when you use the App.
-          </div>
+          <p class="p">
+            This Privacy Policy explains how FireGuard 112+ (the “App”) collects, uses, stores and shares data when you use the App. The App is designed as an informational civil-protection and emergency-safety tool. It does not replace official emergency services, civil protection authorities, emergency communications, medical advice, professional judgment, or official evacuation instructions.
+          </p>
         </div>
 
-        <div class="h2">1. Summary</div>
+        <h3 class="h2">1. Summary</h3>
         <ul>
-          <li><strong>Advertising:</strong> The App may display banner ads using <strong>Google AdMob</strong>.</li>
-          <li><strong>Location:</strong> The App may use location to provide local information and area-based functionality. Location may be collected while the App is open. If you enable optional background location features, location may also be processed in the background.</li>
-          <li><strong>Remote notifications:</strong> If enabled, the App may send remote push notifications using <strong>Firebase Cloud Messaging (FCM)</strong> and <strong>Apple Push Notification service (APNs)</strong>.</li>
-          <li><strong>Local notifications:</strong> The App may use on-device notifications for reminders or alerts.</li>
-          <li><strong>Tracking:</strong> Advertising providers may use permitted identifiers and device signals in accordance with your device settings and applicable law.</li>
-          <li><strong>No sale of personal data:</strong> We do not sell personal data.</li>
+          <li><strong>No third-party advertising currently displayed:</strong> the App does not currently display third-party advertising banners, interstitial ads or advertising-network placements.</li>
+          <li><strong>No sale of personal data:</strong> we do not sell personal data.</li>
+          <li><strong>Location is optional but important for location-aware features:</strong> the App may request location permission to provide local information, map-based functions, alerts and emergency-related tools.</li>
+          <li><strong>Notifications are optional:</strong> the App may use local notifications and remote push notifications if enabled by the user.</li>
+          <li><strong>Emergency information is user-controlled:</strong> any emergency profile, emergency contact or medical-related field is provided voluntarily by the user and can be edited or removed by the user where the App provides that functionality.</li>
+          <li><strong>Third-party technical services:</strong> the App may rely on platform, cloud, map, weather, notification, public-data, hosting, diagnostics or security providers to operate its features.</li>
         </ul>
 
         <div class="callout warn">
-          <div class="p muted">
-            Safety note: The App provides informational content, optional alerts, and user-configurable emergency-related tools. It does not replace emergency services, civil protection authorities, medical advice, or official evacuation guidance. In an emergency, call the competent emergency authority immediately.
-          </div>
+          <p class="p">
+            <strong>Emergency safety notice:</strong> In a real emergency, immediately contact the competent emergency authority, follow official instructions and do not rely only on the App. The App may contain delays, inaccuracies, missing data, service interruptions, device-level limitations or third-party data errors.
+          </p>
         </div>
 
-        <div class="h2">2. Data We Collect and Why</div>
-
+        <h3 class="h2">2. Data We May Collect and Why</h3>
         <div class="table-wrap">
           <table>
             <thead>
@@ -614,401 +509,433 @@
                 <th>Category</th>
                 <th>Examples</th>
                 <th>Purpose</th>
-                <th>Legal basis (EU/EEA users)</th>
+                <th>Legal basis for EU/EEA users</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>Location data (optional)</strong></td>
-                <td>
-                  Precise location (GPS) when permission is granted.<br />
-                  Last known location may be stored to support local functionality and area-based alerts.
-                </td>
-                <td>
-                  Provide local features, contextual information, and area-based notifications.
-                </td>
-                <td>
-                  <strong>Consent</strong> and, where applicable, <strong>performance of a service</strong> you request.
-                </td>
+                <td><strong>Location data</strong></td>
+                <td>Approximate or precise location, GPS coordinates, last known location, location permission status.</td>
+                <td>Provide map-based features, location-aware information, area-based alerts, emergency tools, safer-zone guidance or local civil-protection context.</td>
+                <td>Consent, performance of a user-requested service, and legitimate interests where applicable and permitted.</td>
               </tr>
-
               <tr>
-                <td><strong>Remote push notification data</strong></td>
-                <td>
-                  Device push token, platform messaging token, notification preference state.
-                </td>
-                <td>
-                  Deliver alerts or notices that you enable.
-                </td>
-                <td>
-                  <strong>Consent</strong> and, where applicable, <strong>performance of a service</strong> you request.
-                </td>
+                <td><strong>Emergency profile data</strong></td>
+                <td>Name or nickname, emergency contacts, medical notes, blood type, allergies, conditions, medication notes, user-entered safety information.</td>
+                <td>Allow the user to store and use emergency-related information inside the App or include user-approved information in emergency workflows.</td>
+                <td>Explicit consent where required, and performance of a user-requested service.</td>
               </tr>
-
               <tr>
-                <td><strong>Local notifications (on device)</strong></td>
-                <td>
-                  Notification schedules and settings stored on your device.
-                </td>
-                <td>
-                  Provide reminders or alerts configured by you.
-                </td>
-                <td>
-                  <strong>Consent</strong>.
-                </td>
+                <td><strong>Notification data</strong></td>
+                <td>Device push token, platform messaging token, notification settings, notification preferences, alert-radius preferences.</td>
+                <td>Deliver local or remote notifications and manage notification preferences.</td>
+                <td>Consent and performance of a user-requested service.</td>
               </tr>
-
               <tr>
-                <td><strong>Advertising data</strong></td>
-                <td>
-                  Advertising identifiers where permitted, IP address, device information, ad impressions, clicks, and interactions.
-                </td>
-                <td>
-                  Serve ads, measure performance, frequency capping, fraud prevention, and reporting. Where allowed, ads may be personalized.
-                </td>
-                <td>
-                  <strong>Consent</strong> where required for personalization. <strong>Legitimate interests</strong> may apply to basic ad delivery, measurement, and fraud prevention, subject to applicable law.
-                </td>
+                <td><strong>Device and diagnostics data</strong></td>
+                <td>App version, operating system, device model, crash logs, error logs, performance events, security-relevant logs.</td>
+                <td>Maintain security, reliability, debugging, abuse prevention, service integrity and quality improvement.</td>
+                <td>Legitimate interests, legal obligations where applicable, and consent where required.</td>
               </tr>
-
               <tr>
-                <td><strong>Diagnostics (optional)</strong></td>
-                <td>
-                  Crash logs, app version, OS version, device-related technical diagnostics.
-                </td>
-                <td>
-                  Improve stability, troubleshoot issues, maintain quality and security.
-                </td>
-                <td>
-                  <strong>Legitimate interests</strong>, subject to applicable law.
-                </td>
+                <td><strong>Account or support data</strong></td>
+                <td>Email address, support messages, permission requests, infringement reports or partnership communications.</td>
+                <td>Provide support, answer requests, maintain records and protect legal rights.</td>
+                <td>Performance of a service, legitimate interests and legal obligations.</td>
+              </tr>
+              <tr>
+                <td><strong>Public-data and map interaction data</strong></td>
+                <td>Map queries, region, country, selected layers, public fire/weather/civil-protection datasets viewed by the user.</td>
+                <td>Provide App functionality, improve usability, maintain service stability and generate non-identifying operational insights.</td>
+                <td>Performance of a service and legitimate interests.</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="callout">
-          <div class="h3">Important clarifications</div>
-          <ul>
-            <li><strong>Last known location:</strong> area-based alerts may rely on your most recent saved location. If location is not updated for a period of time, alerts may be less accurate.</li>
-            <li><strong>Background location is optional:</strong> if offered and enabled, you may disable it at any time in your device settings. Background location may increase battery consumption.</li>
-          </ul>
-        </div>
-
-        <div class="h2">3. Remote Push Notifications</div>
+        <h3 class="h2">3. Advertising Status</h3>
         <p class="p">
-          If you enable notifications, the App may send remote alerts. We may use Firebase Cloud Messaging (FCM) and Apple Push Notification service (APNs) for notification routing and delivery, depending on the platform.
+          The App does not currently display third-party advertising. Advertising-network references have been removed from this version of the legal documents because the App is currently operated without third-party ads.
         </p>
         <p class="p">
-          To support notification delivery, we may process a device push token and related preference data. Where relevant to a feature you enable, we may also use your last known location for area-based functionality.
-        </p>
-        <p class="p">
-          You can disable notifications at any time in your device settings.
+          If third-party advertising is introduced in the future, this Privacy Policy will be updated before or at the time of such introduction, and any required consent, transparency notice, store disclosure or privacy label update will be implemented according to applicable law and platform rules.
         </p>
 
-        <div class="h2">4. Advertising and Your Choices</div>
-        <p class="p">
-          The App may display advertisements and may use Google AdMob to serve ads on iOS and Android.
-        </p>
-
-        <div class="h3">Personalized and non-personalized ads</div>
+        <h3 class="h2">4. Location Data</h3>
         <ul>
-          <li><strong>Personalized ads</strong> may use permitted identifiers and related signals to show more relevant advertising.</li>
-          <li><strong>Non-personalized ads</strong> are contextual ads shown without using identifiers for personalization.</li>
+          <li><strong>While using the App:</strong> location may be used while the App is open to provide map, alert and local-information features.</li>
+          <li><strong>Background location:</strong> if the App offers background location features and you enable them, location may be processed in the background to support ongoing alert or safety functionality. You may disable this in device settings.</li>
+          <li><strong>Last known location:</strong> some area-based alerts or safety tools may use the most recent available location. If location is stale, unavailable or inaccurate, features may be inaccurate.</li>
+          <li><strong>Control:</strong> you may deny, limit or revoke location permission at any time through device settings. Some features may not work properly without location access.</li>
         </ul>
 
-        <div class="h3">Device-level privacy choices</div>
-        <ul>
-          <li>You can manage advertising and privacy permissions through your device settings.</li>
-          <li>The App may still show ads with limited personalization depending on your settings and applicable law.</li>
-        </ul>
-
-        <p class="p muted">
-          Google Privacy Policy:
-          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a><br />
-          AdMob Help:
-          <a href="https://support.google.com/admob/" target="_blank" rel="noopener">https://support.google.com/admob/</a>
+        <h3 class="h2">5. Notifications</h3>
+        <p class="p">
+          If you enable notifications, the App may use platform notification services such as Apple Push Notification service, Firebase Cloud Messaging, local device notifications or other technically necessary notification infrastructure. Notification delivery is not guaranteed and may be delayed, blocked or affected by device settings, connectivity, operating-system restrictions or third-party service issues.
         </p>
 
-        <div class="h2">5. Location Data</div>
-        <p class="p">
-          The App may request location permission to provide location-aware functionality and improve area-based features.
-        </p>
+        <h3 class="h2">6. Sharing of Data</h3>
+        <p class="p">We may share data only as reasonably necessary for the operation, security, legal protection and support of the App, including with:</p>
         <ul>
-          <li><strong>While Using the App:</strong> location may be used while the App is open.</li>
-          <li><strong>Background location:</strong> if the App provides such a feature and you enable it, the App may process location in the background to support ongoing alert functionality.</li>
-          <li><strong>Control:</strong> you may deny or revoke location permission at any time in device settings. Certain features may be limited without location access.</li>
+          <li>cloud hosting, database, authentication, storage, security or backend providers;</li>
+          <li>notification infrastructure providers;</li>
+          <li>map, geocoding, weather, public-data, satellite, fire-data or civil-protection data providers;</li>
+          <li>diagnostics, crash-reporting or security tools;</li>
+          <li>legal, governmental, regulatory or judicial authorities where required by law or necessary to protect rights, users, safety or the App.</li>
         </ul>
 
-        <div class="h2">6. Sharing of Data</div>
-        <p class="p">We share data only as reasonably necessary to operate the App or comply with law:</p>
-        <ul>
-          <li><strong>Google AdMob:</strong> advertising delivery, measurement, fraud prevention, and reporting.</li>
-          <li><strong>Google FCM:</strong> routing and delivery of push notifications.</li>
-          <li><strong>Apple APNs:</strong> delivery of push notifications to iOS devices.</li>
-          <li><strong>Legal and security:</strong> where reasonably necessary to comply with law, enforce rights, investigate abuse, or protect users and the App.</li>
-        </ul>
-
-        <div class="h2">7. International Transfers</div>
+        <h3 class="h2">7. International Transfers</h3>
         <p class="p">
-          Some service providers may process data outside your country. Where required, transfers are subject to appropriate safeguards under applicable law.
+          Some providers may process data outside your country. Where required, international transfers are subject to appropriate safeguards under applicable law, such as standard contractual clauses, adequacy decisions, contractual safeguards or other lawful transfer mechanisms.
         </p>
 
-        <div class="h2">8. Data Retention</div>
+        <h3 class="h2">8. Data Retention</h3>
         <ul>
-          <li><strong>Push token:</strong> retained while notification functionality remains enabled or technically necessary for delivery management.</li>
-          <li><strong>Location-related data:</strong> retained only as necessary for the relevant service functionality, unless a longer retention period is required by law or for legitimate security and dispute-resolution purposes.</li>
-          <li><strong>Advertising-related data:</strong> may be processed and retained by relevant advertising providers according to their own policies.</li>
-          <li><strong>Diagnostics:</strong> retained only as reasonably necessary to maintain reliability, quality, and security.</li>
+          <li><strong>Location-related data:</strong> retained only as necessary for the relevant feature, security, debugging or legal purposes.</li>
+          <li><strong>Emergency profile data:</strong> retained while the user keeps it in the App or account, unless deletion is requested and retention is not required for legal or security reasons.</li>
+          <li><strong>Push tokens:</strong> retained while notification functionality remains enabled or technically necessary for delivery management.</li>
+          <li><strong>Support and legal communications:</strong> retained as necessary to answer requests, preserve evidence, resolve disputes and comply with legal obligations.</li>
+          <li><strong>Diagnostics:</strong> retained only as reasonably necessary to maintain security, reliability and quality.</li>
         </ul>
 
-        <div class="h2">9. Security</div>
+        <h3 class="h2">9. Security</h3>
         <p class="p">
-          We use reasonable technical and organizational safeguards to protect information. However, no method of transmission, storage, or processing is completely secure.
+          We use reasonable technical and organizational measures designed to protect information against unauthorized access, loss, misuse, alteration or disclosure. No method of transmission, processing or storage is completely secure.
         </p>
 
-        <div class="h2">10. Your Rights</div>
+        <h3 class="h2">10. Your Rights</h3>
         <p class="p">
-          Depending on your jurisdiction, you may have rights including access, correction, deletion, restriction, objection where applicable, portability where applicable, and withdrawal of consent at any time.
+          Depending on your jurisdiction, you may have rights including access, rectification, erasure, restriction, objection, portability, withdrawal of consent and the right to lodge a complaint with a competent data-protection authority.
         </p>
         <p class="p">
           To exercise applicable rights, contact <a href="mailto:ocysoft@outlook.com">ocysoft@outlook.com</a>.
         </p>
 
-        <div class="h2">11. Children</div>
+        <h3 class="h2">11. Children</h3>
         <p class="p">
-          The App is not directed to children under 13, and we do not knowingly collect personal data from children under 13.
+          The App is not directed to children under 13. We do not knowingly collect personal data from children under 13. Where higher age thresholds apply under local law, the applicable threshold will be respected.
         </p>
 
-        <div class="h2">12. Changes to This Policy</div>
+        <h3 class="h2">12. Changes to This Privacy Policy</h3>
         <p class="p">
-          We may update this Privacy Policy from time to time. We will revise the effective date and last updated date above.
+          We may update this Privacy Policy from time to time. The effective date and last updated date will be revised when material changes are made.
         </p>
-
-        <div id="contact" class="h2 anchor">13. Contact</div>
-        <p class="p">
-          For privacy requests, permissions, or legal notices:<br />
-          <strong><a href="mailto:ocysoft@outlook.com">ocysoft@outlook.com</a></strong><br />
-          <strong>Chris Zaikis</strong>
-        </p>
-
-        <div class="footer">
-          &copy; <span id="year1"></span> FireGuard 112+. All rights reserved.
-        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div id="ip" class="anchor" style="padding: 0 0 34px;">
+  <section id="ip" class="anchor">
     <div class="container">
       <div class="card">
         <div class="label">Intellectual Property & Enforcement</div>
-        <div class="h-title" style="font-size:1.86rem;">Intellectual Property Notice and Anti-Copying Terms</div>
-        <div class="h-meta">Applies to the App, the website, the icon, the brand, and all associated materials.</div>
+        <h2 class="h-title" style="font-size:1.86rem;">Intellectual Property Notice and Anti-Copying Terms</h2>
+        <p class="h-meta">Applies to the App, source code, object code, backend logic, UI, brand, documentation, demos, screenshots, website, icons, graphics, data compilations and related materials.</p>
 
         <div class="callout strong">
           <p class="p">
-            <strong>Strict reservation of rights:</strong> Except for the limited personal, revocable, non-exclusive right to use the App in accordance with this page and the EULA, no right or license is granted to copy, adapt, imitate, distribute, disclose, publish, commercialize, exploit, or create derivative works from any part of FireGuard 112+ or its related materials.
+            <strong>All rights reserved:</strong> FireGuard 112+, including its protected expression, source code, object code, software architecture, backend logic, database structure, interface expression, screen layouts, graphical assets, texts, documentation, icon, logo, distinctive appearance, trade dress, workflows and legal materials, is owned by Christos Zaikis / Chris Zaikis or licensed to him by third parties. No ownership interest is transferred to any user, visitor, evaluator, partner, public authority, governmental body, contractor, competitor or third party.
           </p>
         </div>
 
-        <div class="h2">1. Ownership of Rights</div>
-        <p class="p">
-          FireGuard 112+, including without limitation its name, logo, icon, visual identity, interface architecture, screen layouts, user flows, texts, graphics, databases, compilations, software code, object code, source code, features, functionalities, content structure, and all related documentation, are and remain the exclusive property of <strong>Chris Zaikis</strong> and, where applicable, his licensors.
-        </p>
-        <p class="p">
-          All rights not expressly granted are reserved in full.
-        </p>
-
-        <div class="h2">2. What Is Prohibited</div>
-        <p class="p">
-          For the avoidance of doubt, and to the maximum extent permitted by applicable law, you may not, without prior express written permission from the rights holder:
-        </p>
+        <h3 class="h2">1. Protected Materials</h3>
+        <p class="p">To the maximum extent permitted by applicable law, the protected materials include, without limitation:</p>
         <ul>
-          <li>copy, reproduce, republish, upload, post, display, perform, transmit, distribute, sell, resell, license, sublicense, lease, assign, or otherwise exploit any part of the App or related materials;</li>
-          <li>adapt, modify, translate, localize, rebrand, white-label, clone, mirror, frame, emulate, or create derivative works based on the App, its design, its flows, or its content;</li>
-          <li>reverse engineer, decompile, disassemble, decode, derive source code from, or otherwise attempt to discover the source code, architecture, logic, APIs, data models, or non-public implementation details of the App, except only where mandatory law expressly permits such activity and only to that minimum extent;</li>
-          <li>remove, alter, obscure, or bypass any copyright, trademark, proprietary, technological, or security notice or measure;</li>
-          <li>use screenshots, UI structures, icons, design elements, content blocks, or distinctive screen sequences in a manner that creates a substantially similar product, service, website, application, or commercial presentation;</li>
-          <li>extract, scrape, harvest, index, or systematically collect content, metadata, structure, or non-public information from the App by manual, automated, or programmatic means;</li>
-          <li>use the App, any protected material, or any confidential or non-public information to build, train, improve, benchmark, market, or support a competing or substantially similar product or service;</li>
-          <li>register, use, or attempt to use any name, logo, icon, domain name, app title, social handle, keyword, or other identifier that is identical to, confusingly similar to, or misleadingly associated with FireGuard 112+.</li>
+          <li>source code, object code, compiled code, scripts, components, configuration and deployment logic;</li>
+          <li>software architecture, module structure, APIs, backend endpoints, edge functions, database schema, security rules and non-public implementation details;</li>
+          <li>preparatory design material, technical documentation, product specifications, internal notes and unpublished roadmaps;</li>
+          <li>visual identity, name, logo, icon, colour combinations, typography, brand presentation and store listing expression;</li>
+          <li>screen layouts, user-interface expression, content structure, map-layer presentation, emergency workflows and distinctive screen sequences;</li>
+          <li>original texts, translations, descriptions, legal documents, promotional materials, screenshots, mockups and demo materials;</li>
+          <li>databases, data compilations, selection or arrangement of datasets, alert rules, thresholds, configuration and curated data structures;</li>
+          <li>confidential information, know-how, trade secrets, non-public algorithms, non-public business logic, partnership materials and technical evidence files.</li>
         </ul>
 
-        <div class="h2">3. No Implied License</div>
+        <h3 class="h2">2. No Protection Claim Over Bare Ideas</h3>
         <p class="p">
-          No license or right is granted by implication, estoppel, exhaustion, acquiescence, waiver, or otherwise. If a right or use is not expressly permitted in writing by the rights holder, it is prohibited.
+          Nothing in this Notice falsely claims exclusive ownership over a bare abstract idea, general concept, public emergency number, public dataset, official governmental function, standard emergency practice, general civil-protection objective, or any element that applicable law does not protect. The Rights Holder reserves and enforces rights over the protected expression, implementation, code, design, brand, documentation, database selection/arrangement, confidential information, contractual rights and unfair-competition interests associated with FireGuard 112+.
         </p>
 
-        <div class="h2">4. Limited Permitted Use</div>
+        <h3 class="h2">3. No Open-Source License</h3>
         <p class="p">
-          Subject to your compliance with applicable law and the EULA, you may download and use the App only for your own legitimate internal or personal use on devices you own or control. This limited permission does not include any right to copy protected expression, duplicate the product, reuse the brand, reproduce the interface, or commercialize any part of the App.
+          Unless a separate written license file expressly states otherwise, FireGuard 112+ is <strong>not</strong> released under an open-source license. Viewing, receiving, accessing or downloading any code, documentation, screenshot, demo, page or repository does not grant permission to copy, fork, clone, reuse, modify, distribute, commercialize or create derivative works. Third-party open-source components, if any, remain governed solely by their own separate licenses.
         </p>
 
-        <div class="h2">5. Legal Protection Statement</div>
+        <h3 class="h2">4. Strictly Prohibited Conduct</h3>
+        <p class="p">Without prior express written permission from the Rights Holder, you may not, and may not assist, authorize or enable any third party to:</p>
+        <ul>
+          <li>copy, reproduce, republish, upload, post, display, perform, transmit, distribute, sell, resell, license, sublicense, lease, assign or otherwise exploit any part of FireGuard 112+;</li>
+          <li>adapt, modify, translate, localize, rebrand, white-label, clone, mirror, emulate, frame, wrap or create derivative works based on FireGuard 112+;</li>
+          <li>create a competing or substantially similar application, platform, public-sector tool, emergency-safety product or civil-protection system using protected FireGuard 112+ expression, code, UI, documentation, architecture or confidential information;</li>
+          <li>reverse engineer, decompile, disassemble, decode, derive source code from or attempt to discover non-public source code, architecture, algorithms, APIs, data models or implementation details, except only where mandatory law expressly permits and only to the minimum extent required;</li>
+          <li>use screenshots, UI flows, iconography, content blocks, distinctive map-layer presentation, emergency workflows or screen sequences to create a substantially similar product, public tender specification, procurement document, pitch deck, website, app or commercial presentation;</li>
+          <li>scrape, crawl, harvest, index, extract, train on, benchmark against or systematically collect content, metadata, source structure, database structure or non-public information from FireGuard 112+;</li>
+          <li>use FireGuard 112+ or any related material to build, train, improve, market, validate, benchmark or support a competing or substantially similar product, model, dataset, public-sector system or service;</li>
+          <li>remove, alter, obscure or bypass copyright notices, trade mark notices, proprietary notices, technical protection measures, security rules, rate limits or access controls;</li>
+          <li>register, use or attempt to use any name, logo, app title, domain, handle, keyword, metadata, store listing or identifier that is identical to, confusingly similar to or misleadingly associated with FireGuard 112+;</li>
+          <li>misrepresent any connection, sponsorship, approval, official status, partnership, public authority adoption or governmental endorsement involving FireGuard 112+.</li>
+        </ul>
+
+        <h3 class="h2">5. No Implied License</h3>
         <p class="p">
-          The App and its materials are protected under applicable intellectual property, database, contractual, and unfair competition laws. Nothing on this page shall be interpreted as granting permission to copy, imitate, adapt, exploit, or redistribute any protected element except where expressly stated in writing by the Developer.
-        </p>
-        <p class="p">
-          Nothing on this page shall be interpreted as a statement of any specific filing, registration, status, review, or formal designation unless the Developer expressly states it in writing and only to the exact extent stated.
+          No license or right is granted by implication, estoppel, exhaustion, waiver, acquiescence, publication, app-store availability, website access, repository access, demonstration, meeting, pitch, technical review, procurement review, governmental evaluation, press coverage or otherwise. Any permission must be express, written and signed or otherwise formally confirmed by the Rights Holder.
         </p>
 
-        <div class="h2">6. Enforcement and Remedies</div>
+        <h3 class="h2">6. Trade Secrets and Confidential Information</h3>
         <p class="p">
-          Unauthorized copying, imitation, disclosure, cloning, scraping, or exploitation may constitute copyright infringement, trademark infringement, misappropriation, unfair competition, breach of contract, and other violations under applicable law.
+          Non-public code, algorithms, implementation details, backend logic, data models, security configurations, business terms, roadmaps, pricing, partnership discussions, demo-only materials and technical explanations disclosed under circumstances of confidentiality are confidential information and may also constitute trade secrets. They may not be used or disclosed except for the specific authorized purpose for which they were provided.
         </p>
+
+        <h3 class="h2">7. Database and Data Compilation Rights</h3>
         <p class="p">
-          The rights holder expressly reserves the right to investigate suspected infringement, preserve evidence, issue cease and desist demands, submit complaints to app stores, hosting providers, search engines, payment providers, ad networks, and social platforms, and pursue any available civil, administrative, or other remedies, including injunctive or equitable relief and damages where permitted by law.
+          FireGuard 112+ may include original databases, curated selections, arrangements, enrichments, indexes, configurations, metadata structures, alert thresholds or compilations. Unauthorized extraction, re-utilization, scraping or systematic copying of substantial parts, or repeated extraction of insubstantial parts that conflicts with normal exploitation or legitimate interests, is prohibited to the extent permitted by applicable database, contract, unfair-competition and related laws.
+        </p>
+
+        <h3 class="h2">8. Third-Party and Public Data</h3>
+        <p class="p">
+          FireGuard 112+ may display or process third-party or public data sources. The Rights Holder does not claim ownership of third-party public datasets as such. However, the Rights Holder reserves rights in the App’s original software, selection, arrangement, transformation, enrichment, presentation, workflows, databases, documentation, visual design and proprietary implementation.
+        </p>
+
+        <h3 class="h2">9. Evidence Preservation and Enforcement</h3>
+        <p class="p">
+          The Rights Holder may preserve technical, timestamped, repository, publication, access, usage, download, store-listing, screenshot, server-log, metadata, communication and forensic evidence of authorship, copying, access or infringement. Unauthorized copying, imitation, scraping, disclosure, reverse engineering or exploitation may result in cease-and-desist demands, takedown notices, app-store complaints, hosting-provider complaints, search-engine complaints, payment-provider complaints, regulatory reports, civil claims, administrative remedies, injunctive relief and damages.
         </p>
 
         <div class="callout warn">
-          <div class="p">
-            <strong>Notice to potential infringers:</strong> Unauthorized copying or commercial imitation of FireGuard 112+, including its brand identity, iconography, screen design, legal texts, content structure, functional presentation, or software implementation, may trigger immediate enforcement action without further notice.
-          </div>
-        </div>
-
-        <div class="h2">7. Permissions</div>
-        <p class="p">
-          If you wish to request a license, permission to reproduce content, permission to reference assets, or authorization for press, partnerships, or distribution, contact:
-          <strong><a href="mailto:ocysoft@outlook.com">ocysoft@outlook.com</a></strong>
-        </p>
-
-        <div class="footer">
-          &copy; <span id="year2"></span> FireGuard 112+. All rights reserved.
+          <p class="p">
+            <strong>Notice to potential infringers:</strong> Unauthorized copying or commercial imitation of FireGuard 112+, including its brand identity, iconography, screen design, legal texts, content structure, functional presentation, code, data structures, emergency workflows, documentation or software implementation, may trigger immediate enforcement action without further notice.
+          </p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div id="eula" class="anchor" style="padding: 0 0 34px;">
+  <section id="publicsector" class="anchor">
     <div class="container">
       <div class="card">
-        <div class="label">License Terms</div>
-        <div class="h-title" style="font-size:1.86rem;">End User License Agreement (EULA)</div>
-        <div class="h-meta">Applies to FireGuard 112+ on iOS and Android.</div>
+        <div class="label">Public Sector / Government Evaluation</div>
+        <h2 class="h-title" style="font-size:1.86rem;">Public Sector Restriction Notice</h2>
+        <p class="h-meta">Applies to ministries, agencies, municipalities, public authorities, state contractors, consultants, integrators, evaluators and procurement participants.</p>
 
-        <div class="callout">
-          <p class="p muted">
-            This End User License Agreement (“Agreement”) is a legal agreement between you (“User”) and <strong>Chris Zaikis</strong> (the “Developer”) regarding the use of the FireGuard 112+ mobile application, website, and related materials (collectively, the “App”).
+        <div class="callout strong">
+          <p class="p">
+            Access to, review of, demonstration of, or discussion about FireGuard 112+ by any public authority, governmental entity, state-owned body, public-sector contractor, consultant, procurement adviser, emergency-service body or civil-protection organization does not grant any license, permission or authorization to copy, reproduce, imitate, adapt, reverse engineer, tender, commission, develop, procure or deploy a substantially similar product based on protected FireGuard 112+ materials.
           </p>
         </div>
 
-        <div class="h2">1. Acceptance</div>
+        <h3 class="h2">1. Evaluation Is Not a Transfer of Rights</h3>
         <p class="p">
-          By downloading, installing, accessing, browsing, or using the App, you agree to be bound by this Agreement. If you do not agree, do not use the App and uninstall it.
+          Any presentation, proposal, meeting, demo, pilot discussion, technical explanation, email, document, pricing discussion, government contact, public-sector review or procurement conversation is provided solely for evaluation of FireGuard 112+ and does not transfer intellectual property, know-how, source code, implementation rights, procurement rights or derivative-product rights.
         </p>
 
-        <div class="h2">2. Limited License Grant</div>
+        <h3 class="h2">2. No Public Tender Copying</h3>
         <p class="p">
-          Subject to your full compliance with this Agreement, the Developer grants you a limited, revocable, non-exclusive, non-transferable, non-sublicensable license to install and use the App solely for your own lawful personal or internal use on devices that you own or control.
-        </p>
-        <p class="p">
-          This is a license, not a sale. No ownership interest is transferred to you.
+          No public authority, contractor, adviser or third party may use protected FireGuard 112+ expression, screenshots, workflows, code, architecture, technical implementation, documentation, pricing, non-public know-how or distinctive product structure to draft, support, design, benchmark, publish or execute a public tender, request for proposals, procurement specification or competing implementation without express prior written authorization.
         </p>
 
-        <div class="h2">3. Reservation of Rights</div>
+        <h3 class="h2">3. Contractors and Integrators</h3>
         <p class="p">
-          All rights not expressly granted to you are reserved by the Developer. No right or license is granted by implication, estoppel, exhaustion, waiver, or otherwise.
-        </p>
-        <p class="p">
-          For the avoidance of doubt, any act not expressly authorized by this Agreement or by mandatory applicable law is prohibited.
+          Public-sector contractors, consultants, software houses, integrators, subcontractors, evaluators and advisers who receive access to FireGuard 112+ materials are not authorized to copy, reuse or convert those materials into competing deliverables for a state, ministry, municipality, agency or private client.
         </p>
 
-        <div class="h2">4. Restrictions</div>
-        <p class="p">You agree that you will not, and will not permit any third party to:</p>
+        <h3 class="h2">4. Required Written Permission</h3>
+        <p class="p">
+          Any governmental or institutional deployment, pilot, integration, procurement, white-label use, licensing, national-scale use, emergency-service integration, custom version or transfer of know-how requires a separate written agreement signed or formally accepted by the Rights Holder.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="eula" class="anchor">
+    <div class="container">
+      <div class="card">
+        <div class="label">License Terms</div>
+        <h2 class="h-title" style="font-size:1.86rem;">End User License Agreement (EULA)</h2>
+        <p class="h-meta">Applies to FireGuard 112+ on iOS, Android, web pages, demos, documentation and related services.</p>
+
+        <div class="callout">
+          <p class="p">
+            This End User License Agreement (“Agreement”) is a legal agreement between you (“User”) and Christos Zaikis / Chris Zaikis (the “Developer” or “Rights Holder”) regarding use of FireGuard 112+ and related materials (collectively, the “App”).
+          </p>
+        </div>
+
+        <h3 class="h2">1. Acceptance</h3>
+        <p class="p">
+          By downloading, installing, accessing, browsing, evaluating, demonstrating, receiving or using the App or related materials, you agree to this Agreement to the extent permitted by applicable law. If you do not agree, do not use the App and delete or uninstall any copies in your possession or control.
+        </p>
+
+        <h3 class="h2">2. Limited License Grant</h3>
+        <p class="p">
+          Subject to your full compliance with this Agreement, the Developer grants you a limited, revocable, non-exclusive, non-transferable, non-sublicensable license to install and use the App solely for your own lawful personal or internal use on devices that you own or control. This is a license, not a sale. No ownership interest is transferred.
+        </p>
+
+        <h3 class="h2">3. Reservation of Rights</h3>
+        <p class="p">
+          All rights not expressly granted are reserved by the Developer. No right or license is granted by implication, estoppel, exhaustion, waiver, acquiescence, disclosure, publication, app-store availability, public-sector review or otherwise.
+        </p>
+
+        <h3 class="h2">4. Restrictions</h3>
+        <p class="p">You agree that you will not, and will not permit, encourage, assist or authorize any third party to:</p>
         <ul>
-          <li>copy, reproduce, distribute, transmit, display, publish, commercialize, or otherwise exploit the App or any part of it;</li>
-          <li>reverse engineer, decompile, disassemble, decode, translate, adapt, modify, or derive source code or underlying ideas from the App, except only to the extent mandatory law expressly permits and only to that limited extent;</li>
-          <li>create derivative works, clones, replicas, lookalikes, white-label versions, or substantially similar products based on the App, its interface, structure, flows, or content;</li>
-          <li>use the App or any associated material to create, improve, market, or support a competing or substantially similar product or service;</li>
-          <li>remove or alter any copyright, trademark, or proprietary notice;</li>
-          <li>scrape, harvest, crawl, index, or extract data, structure, content, or technical information from the App by automated or manual means;</li>
-          <li>interfere with, disable, circumvent, or test the security, integrity, access controls, or protective measures of the App without express written authorization;</li>
-          <li>use the App for unlawful, harmful, misleading, infringing, defamatory, abusive, or unauthorized purposes.</li>
+          <li>copy, reproduce, distribute, transmit, publish, commercialize or otherwise exploit the App or any part of it;</li>
+          <li>reverse engineer, decompile, disassemble, decode, translate, adapt, modify or derive source code or implementation details from the App, except only where mandatory law expressly permits and only to the minimum extent required;</li>
+          <li>create derivative works, clones, replicas, lookalikes, white-label versions, public-sector equivalents or substantially similar products based on the App, its interface, structure, workflows, content, protected materials or confidential information;</li>
+          <li>use the App or related materials to create, improve, market, tender, procure or support a competing or substantially similar product, public-sector system or service;</li>
+          <li>remove or alter copyright, trade mark, proprietary, security or technical notices;</li>
+          <li>scrape, harvest, crawl, index, extract or train on data, structure, content, metadata, code or technical information from the App by automated or manual means;</li>
+          <li>interfere with, disable, circumvent or test the security, integrity, access controls, rate limits or protective measures of the App without express written authorization;</li>
+          <li>use the App for unlawful, harmful, misleading, infringing, defamatory, abusive, unsafe or unauthorized purposes.</li>
         </ul>
 
-        <div class="h2">5. Intellectual Property</div>
+        <h3 class="h2">5. Intellectual Property</h3>
         <p class="p">
-          The App and all associated intellectual property, including software, code, interface design, text, graphics, visual identity, icon, logo, databases, compilations, documentation, and brand features, are owned by or licensed to the Developer and are protected by applicable law.
+          The App and all associated intellectual property, including software, source code, object code, interface expression, content, graphics, visual identity, icon, logo, databases, compilations, documentation, workflows and brand features, are owned by or licensed to the Developer and are protected by applicable law.
         </p>
 
-        <div class="h2">6. Privacy</div>
+        <h3 class="h2">6. Privacy</h3>
         <p class="p">
           Use of the App is also governed by the Privacy Policy on this page. By using the App, you acknowledge that you have read the Privacy Policy.
         </p>
 
-        <div class="h2">7. Third Party Services</div>
+        <h3 class="h2">7. Third-Party Services and Data Sources</h3>
         <p class="p">
-          The App may use or integrate third party services, including but not limited to notification infrastructure, advertising providers, map providers, weather providers, public data sources, analytics, and platform services. Third party services may operate under their own terms and privacy policies.
+          The App may use or integrate third-party services, public data sources, map services, weather services, satellite/fire information sources, notification services, hosting providers, platform services and diagnostics tools. Third-party services may operate under their own terms, licenses, limitations and privacy policies. Third-party data may be delayed, incomplete, inaccurate, unavailable or subject to separate licensing terms.
         </p>
 
-        <div class="h2">8. Safety Disclaimer</div>
+        <h3 class="h2">8. Safety Disclaimer</h3>
         <p class="p">
-          The App provides informational content, optional alerts, and user-facing tools only. It does not replace emergency services, official warnings, evacuation instructions, civil protection authorities, medical professionals, or professional judgment. You remain solely responsible for your safety decisions, emergency responses, and use of the App.
+          The App provides informational content, optional alerts and user-facing tools only. It does not replace emergency services, official warnings, evacuation instructions, civil-protection authorities, medical professionals, professional firefighting judgment, rescue services, emergency call centres or your own responsibility for safety decisions. Always contact the competent emergency authority in an emergency and follow official instructions.
         </p>
 
-        <div class="h2">9. No Warranty</div>
+        <h3 class="h2">9. No Warranty</h3>
         <p class="p">
-          The App is provided on an “as is” and “as available” basis, without warranties of any kind, express, implied, statutory, or otherwise, including any warranty of accuracy, availability, merchantability, fitness for a particular purpose, title, non-infringement, reliability, uninterrupted operation, or error-free performance.
+          The App is provided on an “as is” and “as available” basis, without warranties of any kind, express, implied, statutory or otherwise, including warranties of accuracy, availability, merchantability, fitness for a particular purpose, title, non-infringement, reliability, uninterrupted operation, error-free performance, notification delivery, data completeness or emergency suitability.
         </p>
 
-        <div class="h2">10. Limitation of Liability</div>
+        <h3 class="h2">10. Limitation of Liability</h3>
         <p class="p">
-          To the maximum extent permitted by law, the Developer shall not be liable for any direct, indirect, incidental, consequential, special, exemplary, or punitive damages, or for any loss of data, business, revenue, goodwill, safety opportunity, or other losses arising from or related to the App, including delays, unavailability, inaccurate information, notification failures, device issues, third party service interruptions, or reliance on App content.
+          To the maximum extent permitted by law, the Developer shall not be liable for any direct, indirect, incidental, consequential, special, exemplary or punitive damages, or for any loss of data, business, revenue, goodwill, safety opportunity, evacuation opportunity or other losses arising from or related to the App, including delays, unavailability, inaccurate information, notification failures, device issues, third-party service interruptions, public-data errors, map errors, location errors or reliance on App content.
+        </p>
+        <p class="p">
+          Nothing in this Agreement excludes or limits liability where such exclusion or limitation is prohibited by mandatory applicable law.
         </p>
 
-        <div class="h2">11. Injunctive and Equitable Relief</div>
+        <h3 class="h2">11. Injunctive and Equitable Relief</h3>
         <p class="p">
-          You acknowledge that unauthorized copying, imitation, disclosure, reverse engineering, or misuse of the App or its intellectual property may cause irreparable harm for which monetary damages may be inadequate. The Developer may seek injunctive, equitable, or similar relief, in addition to any other remedies available under law.
+          You acknowledge that unauthorized copying, imitation, disclosure, reverse engineering, scraping, misuse or infringement of the App or its intellectual property may cause irreparable harm for which monetary damages may be inadequate. The Developer may seek injunctive, interim, urgent, equitable or similar relief, in addition to any other remedies available under law.
         </p>
 
-        <div class="h2">12. Termination</div>
+        <h3 class="h2">12. Termination</h3>
         <p class="p">
-          This Agreement remains in effect until terminated. The Developer may suspend, restrict, or terminate your access or license immediately if you breach this Agreement or use the App in a manner that creates legal, technical, or security risk.
+          This Agreement remains in effect until terminated. The Developer may suspend, restrict or terminate your access or license immediately if you breach this Agreement or use the App in a manner that creates legal, technical, safety, security or reputational risk.
         </p>
         <p class="p">
-          Upon termination, all rights granted to you under this Agreement cease immediately, and you must stop all use of the App and delete or uninstall all copies in your possession or control.
-        </p>
-
-        <div class="h2">13. App Store Terms</div>
-        <p class="p">
-          If the App is obtained through Apple App Store or Google Play, you acknowledge that this Agreement is between you and the Developer, not Apple or Google. Apple and Google are not responsible for the App, its content, support, maintenance, or legal compliance, except as required under their own applicable terms and policies.
+          Upon termination, all rights granted to you cease immediately, and you must stop all use of the App and delete or uninstall all copies in your possession or control.
         </p>
 
-        <div class="h2">14. Governing Law</div>
+        <h3 class="h2">13. App Store Terms</h3>
         <p class="p">
-          This Agreement shall be governed by the laws applicable in the User’s habitual residence or other jurisdiction required by mandatory consumer protection law, without prejudice to any mandatory rights that cannot be waived under applicable law.
+          If the App is obtained through Apple App Store or Google Play, you acknowledge that this Agreement is between you and the Developer, not Apple or Google. Apple and Google are not responsible for the App, its content, support, maintenance or legal compliance except as required under their own applicable terms and policies.
         </p>
 
-        <div class="h2">15. Severability</div>
+        <h3 class="h2">14. Governing Law and Mandatory Consumer Rights</h3>
         <p class="p">
-          If any provision of this Agreement is found invalid, unenforceable, or unlawful, the remaining provisions shall remain in full force to the maximum extent permitted by law.
+          This Agreement is governed by the laws of Greece, without prejudice to any mandatory consumer protection, data protection, platform, jurisdictional or other rights that cannot be waived under applicable law. Where mandatory law gives a consumer the protection of the law of their habitual residence, those mandatory protections remain unaffected.
         </p>
 
-        <div class="h2">16. No Waiver</div>
+        <h3 class="h2">15. Severability</h3>
         <p class="p">
-          Failure by the Developer to enforce any provision of this Agreement shall not constitute a waiver of that provision or of any other right.
+          If any provision of this Agreement is found invalid, unlawful or unenforceable, the remaining provisions remain in full force to the maximum extent permitted by law. The invalid provision shall be interpreted or replaced, where permitted, by a valid provision that most closely reflects the original legal and commercial purpose.
         </p>
 
-        <div class="h2">17. Contact</div>
+        <h3 class="h2">16. No Waiver</h3>
         <p class="p">
-          For legal notices, permissions, support, or infringement-related communications:<br />
-          <strong><a href="mailto:ocysoft@outlook.com">ocysoft@outlook.com</a></strong><br />
-          Owner / Developer: <strong>Chris Zaikis</strong>
+          Failure by the Developer to enforce any provision does not constitute a waiver of that provision or any other right.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="damages" class="anchor">
+    <div class="container">
+      <div class="card">
+        <div class="label">Contractual Penalty / Damages Notice</div>
+        <h2 class="h-title" style="font-size:1.86rem;">Unauthorized Copying, Cloning or Misuse: €20,000,000 Clause</h2>
+
+        <div class="callout strong">
+          <p class="p">
+            <strong>Serious infringement notice:</strong> Any unauthorized commercial, institutional, public-sector, governmental or competitor copying, cloning, reverse engineering, imitation, white-labelling, tender use, procurement use, disclosure, misuse or exploitation of protected FireGuard 112+ materials may cause substantial and difficult-to-quantify harm, including loss of market position, loss of public-sector opportunities, loss of investment value, reputational damage, dilution, loss of exclusivity, loss of licensing opportunities and security risk.
+          </p>
+        </div>
+
+        <h3 class="h2">1. Contractual Penalty / Pre-Estimated Damages</h3>
+        <p class="p">
+          To the maximum extent permitted by applicable law, and especially in cases involving commercial entities, public-sector contractors, governmental bodies, institutional evaluators, competitors, software houses, consultants, integrators or organizations that access, evaluate, receive, use or copy FireGuard 112+ materials in breach of these terms, the infringing party agrees that the Rights Holder may claim a contractual penalty and/or pre-estimated damages of up to <strong>twenty million euros (€20,000,000)</strong> per serious infringement, without prejudice to the Rights Holder’s right to seek higher actual damages, injunctive relief, legal costs, evidence-preservation measures and any other remedies available under law.
         </p>
 
-        <div class="footer">
-          &copy; <span id="year3"></span> FireGuard 112+. All rights reserved.
+        <h3 class="h2">2. Scope of Serious Infringement</h3>
+        <p class="p">Serious infringement includes, without limitation:</p>
+        <ul>
+          <li>copying, cloning or substantially imitating the App, UI, code, architecture, workflows, legal texts, content structure or brand identity;</li>
+          <li>using FireGuard 112+ materials to create or commission a competing public-sector or private-sector application;</li>
+          <li>using demos, screenshots, documentation, code, business logic or technical explanations to prepare a public tender, procurement specification or competing implementation;</li>
+          <li>reverse engineering or extracting source code, APIs, backend logic, database structure, data flows or security configurations;</li>
+          <li>rebranding, white-labelling or presenting FireGuard 112+ protected materials as another person’s, company’s, contractor’s or public authority’s work;</li>
+          <li>unauthorized disclosure or use of confidential information, non-public know-how or trade secrets.</li>
+        </ul>
+
+        <h3 class="h2">3. No Limitation of Other Remedies</h3>
+        <p class="p">
+          The amount above does not limit any statutory, contractual, tort, unfair-competition, intellectual-property, trade-secret, database, injunctive, interim, administrative, criminal or platform remedies available to the Rights Holder. The Rights Holder reserves all rights to pursue removal, takedown, blocking, injunction, damages, account suspension, procurement challenge, evidence preservation and recovery of legal costs where permitted.
+        </p>
+
+        <h3 class="h2">4. Mandatory Law</h3>
+        <p class="p">
+          This clause applies only to the maximum extent permitted by applicable law. If a court or competent authority determines that any part of this clause is invalid, excessive or unenforceable, the clause shall be enforced to the maximum lawful extent and the remaining provisions shall continue to apply.
+        </p>
+
+        <div class="callout warn">
+          <p class="p">
+            <strong>Important:</strong> The €20,000,000 amount is intended for serious commercial, institutional, governmental, contractor or competitor infringement. It is not intended to penalize ordinary good-faith end users who use the App normally and lawfully.
+          </p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section id="contact" class="anchor">
+    <div class="container">
+      <div class="card">
+        <div class="label">Contact</div>
+        <h2 class="h-title" style="font-size:1.86rem;">Legal, Privacy, Permission and Infringement Contact</h2>
+
+        <p class="p">
+          For privacy requests, legal notices, permission requests, licensing, public-sector evaluation terms, infringement reports or partnership communications:
+        </p>
+        <p class="p">
+          <strong>Email:</strong> <a href="mailto:ocysoft@outlook.com">ocysoft@outlook.com</a><br />
+          <strong>Owner / Developer / Rights Holder:</strong> Christos Zaikis / Chris Zaikis<br />
+          <strong>Product:</strong> FireGuard 112+
+        </p>
+
+        <h3 class="h2">Infringement Reports</h3>
+        <p class="p">When reporting suspected infringement, please include where possible:</p>
+        <ul>
+          <li>the infringing app, website, repository, store listing, public tender, document, screenshot or product;</li>
+          <li>URLs, screenshots, timestamps, filenames, package names or other identifiers;</li>
+          <li>a short description of the copied material;</li>
+          <li>your contact details for follow-up.</li>
+        </ul>
+
+        <div class="footer">
+          &copy; <span id="year"></span> FireGuard 112+. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script>
     const y = new Date().getFullYear();
-    document.getElementById("year1").textContent = y;
-    document.getElementById("year2").textContent = y;
-    document.getElementById("year3").textContent = y;
+    document.getElementById("year").textContent = y;
   </script>
 </body>
 </html>
